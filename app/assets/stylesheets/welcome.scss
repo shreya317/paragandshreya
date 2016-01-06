@@ -4,18 +4,21 @@
 
 
 .homepage {
-	background: asset_url("homepage-2.jpg") no-repeat;
-	background-size: 100%;	
-	height: 700px;
+	background: asset_url("mainpages/homepage-2.jpg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 #paragshreya {
 	position: absolute;
-	top: 25%;
-	left: 180px;
+	top: 22%;
+	left: 160px;
 	color: white;
 	text-align: center;
-	font-size: 80px;
+	font-size: 90px;
 	font-family: 'Dancing Script', cursive;
 }
 
@@ -24,6 +27,62 @@
 	top: 40%;
 	left: 340px;
 	color: white;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'Dancing Script', cursive;
+}
+
+.ourstory .row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.ourstory h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  color: #0078a0; // teal blue
+  text-align: left;
+}
+
+.ourstory p {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 40px;
+  text-align: right;
+}
+
+.met {
+  background: asset_url("story/uiuc.png") no-repeat center center fixed;
+}
+
+.firstdate {
+  background: asset_url("story/bulls.jpg") no-repeat center center fixed;
+}
+
+.official {
+  background: asset_url("story/secondcity.jpg") no-repeat center center fixed;
+}
+
+.proposal {
+  background: asset_url("story/proposal.JPG") no-repeat center center fixed;
+}
+
+.engagement {
+  background: asset_url("story/engagement.jpg") no-repeat center center fixed;
+}
+
+.wday {
+  background: asset_url("story/wday.jpg") no-repeat center center fixed;
+  background-position: 0px 300px;
+}
+
+.met, .firstdate, .official, .proposal, .engagement, .wday {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }

@@ -11,24 +11,41 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'moose.JPG' %>
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script|PT+Sans' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-      <div class="row nav-bar">
+    <div class="nav-bar">
+      <div class="row">
         <ul>
-          <li class="countdown"><a href="/"><%=countdown()%> Days</a></li>
-          <ul class="tabs nav-options" data-tab>
-            <li class="tab-title active"><%=link_to "Events", events_index_path %></li>
-            <li class="tab-title active"><%=link_to "Accomodations"%></li>
-            <li class="tab-title active"><%=link_to "Wedding Party", weddingparty_index_path%></li>
-            <li class="tab-title active"><%=link_to "R.S.V.P.", rsvp_index_path%></li>
-            <li class="tab-title active"><%=link_to "Contact Us"%></li>
-          </ul>  
+          <li class="countdown"><a href="/">P&S  <i class="fi-heart"></i>   <%=countdown()%> Days</a></li>
+          <ul class="nav-options">
+            <li><a href="/#story">Our Story</a></li>
+            <li><%=link_to "Events", events_index_path%></li>
+            <li><%=link_to "Wedding Party", weddingparty_index_path%></li>
+            <li><%=link_to "Accommodations", accomodations_index_path%></li>
+            <li><%=link_to "R.S.V.P.", rsvp_index_path%></li>
+            <li><%=link_to "Contact Us", contact_index_path%></li>
+          </ul>
         </ul>
       </div>
+    </div>
+
+    <div class="row down">
+      <i class="fi-arrow-down"></i>
+    </div>
 
     <%= yield %>
+
+    <div class="row top">
+      <a href="#tothetop"><i class="fi-arrow-up"></i></a>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+       Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
+      </div>
+    </div>
 
   </body>
 </html>

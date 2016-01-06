@@ -10,66 +10,77 @@
 }
 
 .epage {
-	background: asset_url("homepage-pic.jpg") no-repeat;
-	background-size: 100%;	
-	height: 665px;
+	background: asset_url("mainpages/eventspage.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 .transbox {
-	height: 350px;
-	margin: 30px;
-  background-color: #ffffff;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+	// height: 350px;
+	// margin: 30px;
+ //  background-color: #ffffff;
+ //  opacity: 0.5;
+ //  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .eventtext {
-	padding: 8%;
-	color: black;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
 }
 
 .eventtext h3 {
 	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
-	font-weight: bold;
-	color: blue;
+  color: white;
+	font-size: 70px;
 }
 
-.transbox p {
+.eventtext h5 {
+  color: white;
+  font-size: 25px;
+}
+
+.eventtext p {
+  color: white;
+  font-size: 25px;
 	margin-bottom: 0px;
 }
 
+.eventtext a {
+  font-size: 20px;
+}
+
 .mehndi {
-	background: asset_url("mehndi1.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mehndi1.jpg") no-repeat center center fixed;
 }
 
 .svidhi {
-	background: asset_url("mp2.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mp2.jpg") no-repeat center center fixed;
 }
 
 .pvidhi {
-	background: asset_url("mp1.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mp1.jpg") no-repeat center center fixed;
 }
 
 .garba {
-	background: asset_url("dandiya.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/dandiya.jpg") no-repeat center center fixed;
 }
 
 .wedding {
-	background-color: red;
-	height: 400px;
+	background: asset_url("eventpage/golfcourse.png") no-repeat center center fixed;
 }
 
 .reception{
-	background-color: blue;
-	height: 400px;
+	background: asset_url("eventpage/ballroom.png") no-repeat center center fixed;
 }
 
+.mehndi, .svidhi, .pvidhi, .garba, .wedding, .reception {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+  height: 600px;
+}

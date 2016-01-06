@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
+  get 'accomodations/index'
+
   get 'events/index'
 
   get 'rsvp/index'

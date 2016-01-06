@@ -1,0 +1,48 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.contact {
+  background: asset_url("mainpages/contact.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 10px;
+  height: 100%;
+}
+
+.contacttext h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: #0078a0; //teal blue
+}
+
+.contacttext p {
+  color: black;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.contacttext p a {
+  color: black;
+}
+
+.contacttext p a:hover {
+  color: #4bb9dd;
+}
+
+.contactinfo {
+  height: 700px;
+}
+
+.contacttext{
+  text-align: center;
+  padding-top: 239px;
+  padding-bottom: 239px;
+}
+
+.fi-telephone, .fi-mail {
+  font-size: 20px;
+}

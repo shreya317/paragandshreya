@@ -86,3 +86,61 @@
   background-size: cover;
   height: 100%;
 }
+
+// Small screens
+
+@media screen and (max-width: 39.9375em) {
+  .homepage {
+    background-position: -371px;
+  }
+
+  #paragshreya {
+    position: absolute;
+    top: 32%;
+    left: 50px;
+    font-size: 50px;
+  }
+
+  #date {
+    position: absolute;
+    top: 41%;
+    left: 50px;
+    font-size: 20px;
+  }
+
+  .ourstory .row {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .ourstory h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .ourstory p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .met {
+    background-position: -410px;
+  }
+
+  .official {
+    background-position: -900px;
+  }
+
+  .proposal {
+    background-position: -250px -40px;
+  }
+
+  .engagement {
+    background-position: -340px 70px;
+  }
+
+  .wday {
+    background-position: -490px 305px;
+  }
+}

@@ -79,11 +79,11 @@
 }
 
 .top {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
 }
 
 .fi-arrow-up {
@@ -106,7 +106,7 @@
 
 /* Used on Accomodations & RSVP page */
 
-.comingsoon {
+.coming-soon {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@
 	padding-bottom: 208.5px;
 }
 
-.comingsoon h1 {
+.coming-soon h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 70px;
   color: #0078a0; /*teal blue*/

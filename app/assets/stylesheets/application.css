@@ -17,51 +17,6 @@
 
  */
 
-.nav-bar {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: fixed;
-	background: white;
-	font-family: 'PT Sans', sans-serif;
-}
-
-.nav-bar ul {
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav-bar li {
-	float: left;
-}
-
-.countdown {
-	font-size: 18px;
-}
-
-.fi-heart {
-  color: #DC143C; /*maroon*/
-}
-
-.nav-bar li a {
-  display: block;
-  color: black;
-  background-color: white;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.nav-bar li a:hover {
-  color: #0078a0; /* teal blue */
-}
-
-.nav-options {
-	float:right;
-}
-
 .down {
   width: 100%;
   margin-left: auto;

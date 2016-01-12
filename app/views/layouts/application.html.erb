@@ -15,20 +15,35 @@
   </head>
 
   <body>
-    <div class="nav-bar">
-      <div class="row">
-        <ul>
-          <li class="countdown"><a href="/">P&S  <i class="fi-heart"></i>   <%=countdown()%> Days</a></li>
-          <ul class="nav-options">
-            <li><a href="/#story">Our Story</a></li>
-            <li><%=link_to "Events", events_index_path%></li>
-            <li><%=link_to "Wedding Party", weddingparty_index_path%></li>
-            <li><%=link_to "Accommodations", accomodations_index_path%></li>
-            <li><%=link_to "R.S.V.P.", rsvp_index_path%></li>
-            <li><%=link_to "Contact Us", contact_index_path%></li>
-          </ul>
+    <div class="fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <!-- Left Nav Sections -->
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">P&S <i class="fi-heart"></i> <%=countdown()%> Days</a></h1>
+          </li>
+          <li class="toggle-topbar"><a href="#"><span>Menu <i class="fi-align-justify"></i></span></a></li>
         </ul>
-      </div>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="/#story">Our Story</a></li>
+            <li><a href="/events/index">Events</a></li>
+            <li><a href="/weddingparty/index">Wedding Party</a></li>
+            <li><a href="/accomodations/index">Accommodations</a></li>
+            <li><a href="/rsvp/index">R.S.V.P.</a></li>
+            <li><a href="/contact/index">Contact Us</a></li>
+            <li class="has-dropdown">
+              <a href="#">More</a>
+              <ul class="dropdown">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Get Social</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
     </div>
 
     <div class="row down">

@@ -2,6 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+nav {
+  background-color: #fff !important;
+}
+
+.top-bar ul li a {
+  background-color: #fff !important;
+  color: black !important;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+.top-bar ul li a:hover {
+  color: #0078a0 !important; //teal blue
+}
+
+.top-bar-section .right li a {
+  font-size: 15px;
+}
+
+nav .fi-heart {
+  color:#DC143C !important;
+}
+
+.toggle-topbar a {
+  background-color: #fff !important;
+}
+
 
 .homepage {
 	background: asset_url("mainpages/homepage-2.jpg") no-repeat center center fixed;

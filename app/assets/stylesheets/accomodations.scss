@@ -12,3 +12,42 @@
   background-position: 0px 8px;
   height: 100%;
 }
+
+/* Used on Accomodations & RSVP page */
+
+.coming-soon {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: transparent;
+  height: 500px;
+  padding-top: 208.5px;
+  padding-bottom: 208.5px;
+}
+
+.coming-soon h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  color: #0078a0; /*teal blue*/
+}
+
+
+/* Small screens */
+
+@media screen and (max-width: 39.9375em) {
+
+  .accommodations {
+    background-position: -455px 108px;
+  }
+
+  .coming-soon {
+    height: 400px;
+    padding-top: 165px;
+    padding-bottom: 165px;
+  }
+
+  .coming-soon h1 {
+    font-size: 50px;
+  }
+}

@@ -2,47 +2,92 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 .contact {
   background: asset_url("mainpages/contact.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px 10px;
   height: 100%;
 }
 
 .contact-text h3 {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
   color: #0078a0; //teal blue
 }
 
 .contact-text p {
-  color: black;
-  font-size: 20px;
-  font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
 }
 
 .contact-text p a {
-  color: black;
+    color: black;
 }
 
 .contact-text p a:hover {
   color: #4bb9dd;
 }
 
-.contact-info {
-  height: 700px;
-}
-
-.contact-text{
+.contact-text {
   text-align: center;
-  padding-top: 239px;
-  padding-bottom: 239px;
 }
 
-.fi-telephone, .fi-mail {
-  font-size: 20px;
+/* Medium screens and up */
+
+@media screen and (min-width: 40em) {
+  .contact {
+    background-position: 0px 10px;
+  }
+
+  .contact-text h3 {
+    font-size: 40px;
+}
+
+  .contact-text p {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    height: 700px;
+  }
+
+  .contact-text {
+    padding-top: 239px;
+    padding-bottom: 239px;
+  }
+
+  .fi-telephone, .fi-mail {
+    font-size: 20px;
+  }
+}
+
+
+// Small screens
+
+@media screen and (max-width: 39.9375em) {
+  .contact {
+  background-position: -390px 200px;
+  }
+
+  .contact-text h3 {
+    font-size: 30px;
+  }
+
+  .contact-text p {
+    font-size: 15px;
+  }
+
+  .contact-info {
+    height: 600px;
+  }
+
+  .contact-text{
+    padding-top: 211px;
+    padding-bottom: 211px;
+  }
+
+  .fi-telephone, .fi-mail {
+    font-size: 15px;
+  }
 }

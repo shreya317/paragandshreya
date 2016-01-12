@@ -39,6 +39,28 @@
 }
 
 .pic img {
+  width: 200px;
   border-radius: 25px;
   box-shadow: 10px 10px 5px grey;
+}
+
+
+// Small screens
+
+@media screen and (max-width: 39.9375em) {
+  .weddingparty {
+    background-position: -525px 80px;
+  }
+
+  .pic img {
+    width: 150px;
+  }
+
+  .bride h3, .groom h3 {
+    font-size: 40px;
+  }
+
+  .bride p, .groom p {
+    font-size: 14px;
+  }
 }

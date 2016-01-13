@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'gallery/index'
+
   get 'contact/index'
 
   get 'accomodations/index'

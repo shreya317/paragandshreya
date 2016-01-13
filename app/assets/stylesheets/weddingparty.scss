@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.weddingparty {
+.wedding-party {
   background: asset_url("mainpages/weddingparty.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,7 +48,7 @@
 // Small screens
 
 @media screen and (max-width: 39.9375em) {
-  .weddingparty {
+  .wedding-party {
     background-position: -525px 45px;
   }
 

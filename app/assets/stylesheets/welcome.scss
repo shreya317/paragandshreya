@@ -2,20 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+nav {
+  background-color: #fff !important;
+}
+
+.top-bar ul li a {
+  background-color: #fff !important;
+  color: black !important;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+.top-bar ul li a:hover {
+  color: #0078a0 !important; //teal blue
+}
+
+.top-bar-section .right li a {
+  font-size: 15px;
+}
+
+nav .fi-heart {
+  color:#DC143C !important;
+}
+
+.toggle-topbar a {
+  background-color: #fff !important;
+}
+
 
 .homepage {
-	background: asset_url("homepage-2.jpg") no-repeat;
-	background-size: 100%;	
-	height: 700px;
+	background: asset_url("mainpages/homepage-2.jpg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 #paragshreya {
 	position: absolute;
-	top: 25%;
-	left: 180px;
+	top: 22%;
+	left: 160px;
 	color: white;
 	text-align: center;
-	font-size: 80px;
+	font-size: 90px;
 	font-family: 'Dancing Script', cursive;
 }
 
@@ -24,6 +53,120 @@
 	top: 40%;
 	left: 340px;
 	color: white;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'Dancing Script', cursive;
+}
+
+.our-story .row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.our-story h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  color: #0078a0; // teal blue
+  text-align: left;
+}
+
+.our-story p {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 40px;
+  text-align: right;
+}
+
+.met {
+  background: asset_url("story/uiuc.png") no-repeat center center fixed;
+}
+
+.firstdate {
+  background: asset_url("story/bulls.jpg") no-repeat center center fixed;
+}
+
+.official {
+  background: asset_url("story/secondcity.jpg") no-repeat center center fixed;
+}
+
+.proposal {
+  background: asset_url("story/proposal.JPG") no-repeat center center fixed;
+}
+
+.engagement {
+  background: asset_url("story/engagement.jpg") no-repeat center center fixed;
+}
+
+.wday {
+  background: asset_url("story/wday.jpg") no-repeat center center fixed;
+  background-position: 0px 300px;
+}
+
+.met, .firstdate, .official, .proposal, .engagement, .wday {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+// Small screens
+
+@media screen and (max-width: 39.9375em) {
+  .homepage {
+    background-position: -371px;
+  }
+
+  #paragshreya {
+    position: absolute;
+    top: 32%;
+    left: 50px;
+    font-size: 50px;
+  }
+
+  #date {
+    position: absolute;
+    top: 41%;
+    left: 50px;
+    font-size: 20px;
+  }
+
+  .our-story .row {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .our-story h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .our-story p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .met {
+    background-position: -410px;
+  }
+
+  .official {
+    background-position: -900px;
+  }
+
+  .proposal {
+    background-position: -250px -40px;
+  }
+
+  .engagement {
+    background-position: -340px 70px;
+  }
+
+  .wday {
+    background-position: -490px 305px;
+  }
 }

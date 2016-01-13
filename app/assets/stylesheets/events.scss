@@ -2,74 +2,112 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-#events {
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: center;
-}
-
 .epage {
-	background: asset_url("homepage-pic.jpg") no-repeat;
-	background-size: 100%;	
-	height: 665px;
+	background: asset_url("mainpages/eventspage.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 .transbox {
-	height: 350px;
-	margin: 30px;
-  background-color: #ffffff;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+	// height: 350px;
+	// margin: 30px;
+ //  background-color: #ffffff;
+ //  opacity: 0.5;
+ //  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-.eventtext {
-	padding: 8%;
-	color: black;
+.event-text {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
 }
 
-.eventtext h3 {
+.event-text h3 {
 	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
-	font-weight: bold;
-	color: blue;
+  color: white;
+	font-size: 70px;
 }
 
-.transbox p {
+.event-text h5 {
+  color: white;
+  font-size: 25px;
+}
+
+.event-text p {
+  color: white;
+  font-size: 25px;
 	margin-bottom: 0px;
 }
 
+.event-text a {
+  font-size: 20px;
+}
+
 .mehndi {
-	background: asset_url("mehndi1.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mehndi1.jpg") no-repeat center center fixed;
 }
 
 .svidhi {
-	background: asset_url("mp2.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mp2.jpg") no-repeat center center fixed;
 }
 
 .pvidhi {
-	background: asset_url("mp1.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/mp1.jpg") no-repeat center center fixed;
 }
 
 .garba {
-	background: asset_url("dandiya.jpg") no-repeat;
-	background-size: 100%;
-	height: 400px;
+	background: asset_url("eventpage/dandiya.jpg") no-repeat center center fixed;
 }
 
 .wedding {
-	background-color: red;
-	height: 400px;
+	background: asset_url("eventpage/golfcourse.png") no-repeat center center fixed;
 }
 
 .reception{
-	background-color: blue;
-	height: 400px;
+	background: asset_url("eventpage/ballroom.png") no-repeat center center fixed;
 }
 
+.mehndi, .svidhi, .pvidhi, .garba, .wedding, .reception {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+  height: 600px;
+}
+
+// Small screens
+
+@media screen and (max-width: 39.9375em) {
+  .mehndi, .svidhi, .pvidhi, .garba, .wedding, .reception {
+    height: 500px;
+  }
+
+  .event-text {
+  padding-top: 157px;
+  padding-bottom: 157px;
+  }
+
+  .event-text h3 {
+    font-size: 40px;
+  }
+
+  .event-text h5 {
+    font-size: 18px;
+  }
+
+  .event-text p {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .event-text a {
+    font-size: 18px;
+  }
+
+  .garba h3, .wedding h3, .reception h3 {
+    font-size: 55px;
+  }
+}

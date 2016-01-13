@@ -11,24 +11,56 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'moose.JPG' %>
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script|PT+Sans' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-      <div class="row nav-bar">
-        <ul>
-          <li class="countdown"><a href="/"><%=countdown()%> Days</a></li>
-          <ul class="tabs nav-options" data-tab>
-            <li class="tab-title active"><%=link_to "Events", events_index_path %></li>
-            <li class="tab-title active"><%=link_to "Accomodations"%></li>
-            <li class="tab-title active"><%=link_to "Wedding Party", weddingparty_index_path%></li>
-            <li class="tab-title active"><%=link_to "R.S.V.P.", rsvp_index_path%></li>
-            <li class="tab-title active"><%=link_to "Contact Us"%></li>
-          </ul>  
+    <div class="fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <!-- Left Nav Sections -->
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">P&S <i class="fi-heart"></i> <%=countdown()%> Days</a></h1>
+          </li>
+          <li class="toggle-topbar"><a href="#"><span>Menu <i class="fi-align-justify"></i></span></a></li>
         </ul>
-      </div>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="/#story">Our Story</a></li>
+            <li><a href="/events/index">Events</a></li>
+            <li><a href="/weddingparty/index">Wedding Party</a></li>
+            <li><a href="/accomodations/index">Accommodations</a></li>
+            <li><a href="/rsvp/index">R.S.V.P.</a></li>
+            <li><a href="/contact/index">Contact Us</a></li>
+            <li class="has-dropdown">
+              <a href="#">More</a>
+              <ul class="dropdown">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Get Social</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <div class="row down">
+      <i class="fi-arrow-down"></i>
+    </div>
 
     <%= yield %>
+
+    <div class="row top">
+      <a href="#tothetop"><i class="fi-arrow-up"></i></a>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+       Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
+      </div>
+    </div>
 
   </body>
 </html>

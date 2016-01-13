@@ -11,9 +11,24 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+
+  $('a[href^="#tothetop"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $("a#tothetop");
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing');
+  });
+});

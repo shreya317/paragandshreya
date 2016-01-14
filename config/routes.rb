@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'social/index'
+
   get 'gallery/index'
 
   get 'contact/index'

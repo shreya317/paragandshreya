@@ -17,6 +17,10 @@
 
  */
 
+html {
+  overflow-x: hidden;
+}
+
 .down {
   width: 100%;
   margin-left: auto;

@@ -24,7 +24,6 @@
           </li>
           <li class="toggle-topbar"><a href="#"><span>Menu <i class="fi-align-justify"></i></span></a></li>
         </ul>
-
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
@@ -37,30 +36,25 @@
             <li class="has-dropdown">
               <a href="#">More</a>
               <ul class="dropdown">
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Get Social</a></li>
+                <li><a href="/gallery/index">Gallery</a></li>
+                <li><a href="/social/index">Get Social</a></li>
               </ul>
             </li>
           </ul>
         </section>
       </nav>
     </div>
-
     <div class="row down">
       <i class="fi-arrow-down"></i>
     </div>
-
     <%= yield %>
-
     <div class="row top">
       <a href="#tothetop"><i class="fi-arrow-up"></i></a>
     </div>
-
     <div class="footer">
       <div class="row">
        Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
       </div>
     </div>
-
   </body>
 </html>

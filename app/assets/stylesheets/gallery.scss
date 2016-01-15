@@ -47,4 +47,8 @@ img {
   .gallery .tall img {
     width: 200px;
   }
+
+  body {
+    overflow-x: hidden !important;
+  }
 }

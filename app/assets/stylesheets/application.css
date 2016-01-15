@@ -17,10 +17,6 @@
 
  */
 
-html {
-  overflow-x: hidden;
-}
-
 .down {
   width: 100%;
   margin-left: auto;
@@ -61,4 +57,8 @@ html {
 .footer .row {
 	padding: 15px;
   font-family: 'PT Sans', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
 }

@@ -12,19 +12,15 @@
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'moose.JPG' %>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Dancing+Script|PT+Sans' rel='stylesheet' type='text/css'>
+
+    <meta property="og:title"  content="Parag & Shreya" />
+    <meta property="og:image:url"  content="<%=image_url('preview.jpg')%>" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
   </head>
 
   <body>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-65148712-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-
     <div class="fixed">
       <nav class="top-bar" data-topbar role="navigation">
         <!-- Left Nav Sections -->
@@ -66,5 +62,14 @@
        Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
       </div>
     </div>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-65148712-1', 'auto');
+        ga('send', 'pageview');
+      </script>
   </body>
 </html>

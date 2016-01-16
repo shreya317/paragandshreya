@@ -26,9 +26,13 @@
         <!-- Left Nav Sections -->
         <ul class="title-area">
           <li class="name">
-            <h1><a href="/">P&S <i class="fi-heart"></i> <%=countdown()%> Days</a></h1>
+            <h1>
+              <a href="/">P&S&nbsp;<i class="fi-heart"></i>&nbsp;<%=countdown()%> Days</a>
+            </h1>
           </li>
-          <li class="toggle-topbar"><a href="#"><span>Menu <i class="fi-align-justify"></i></span></a></li>
+          <li class="toggle-topbar">
+            <a href="#"><span>Menu <i class="fi-align-justify"></i></span></a>
+          </li>
         </ul>
         <section class="top-bar-section">
           <!-- Right Nav Section -->
@@ -53,23 +57,25 @@
     <div class="row down">
       <i class="fi-arrow-down"></i>
     </div>
+
     <%= yield %>
+
     <div class="row top">
       <a href="#tothetop"><i class="fi-arrow-up"></i></a>
     </div>
     <div class="footer">
       <div class="row">
-       Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
+        Powered by Shreya & Parag <%=image_tag("moose.JPG", size:"35")%>
       </div>
     </div>
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-65148712-1', 'auto');
-        ga('send', 'pageview');
-      </script>
+      ga('create', 'UA-65148712-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

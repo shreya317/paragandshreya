@@ -3,20 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .epage {
-	background: asset_url("mainpages/eventspage.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
+  background: asset_url("mainpages/eventspage.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-}
-
-.transbox {
-	// height: 350px;
-	// margin: 30px;
- //  background-color: #ffffff;
- //  opacity: 0.5;
- //  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .event-text {
@@ -26,9 +18,9 @@
 }
 
 .event-text h3 {
-	font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   color: white;
-	font-size: 70px;
+  font-size: 70px;
 }
 
 .event-text h5 {
@@ -39,38 +31,46 @@
 .event-text p {
   color: white;
   font-size: 25px;
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .event-text a {
   font-size: 20px;
 }
 
-.mehndi {
-	background: asset_url("eventpage/mehndi1.jpg") no-repeat center center fixed;
+.garba {
+  background: asset_url("eventpage/dandiya.jpg") no-repeat center center fixed;
 }
 
-.svidhi {
-	background: asset_url("eventpage/mp2.jpg") no-repeat center center fixed;
+.mehndi {
+  background: asset_url("eventpage/mehndi1.jpg") no-repeat center center fixed;
 }
 
 .pvidhi {
-	background: asset_url("eventpage/mp1.jpg") no-repeat center center fixed;
-}
-
-.garba {
-	background: asset_url("eventpage/dandiya.jpg") no-repeat center center fixed;
-}
-
-.wedding {
-	background: asset_url("eventpage/golfcourse.png") no-repeat center center fixed;
+  background: asset_url("eventpage/mp1.jpg") no-repeat center center fixed;
 }
 
 .reception{
-	background: asset_url("eventpage/ballroom.png") no-repeat center center fixed;
+  background: asset_url("eventpage/ballroom.png") no-repeat center center fixed;
 }
 
-.mehndi, .svidhi, .pvidhi, .garba, .wedding, .reception {
+.svidhi {
+  background: asset_url("eventpage/mp2.jpg") no-repeat center center fixed;
+}
+
+.transbox {
+  // height: 350px;
+  // margin: 30px;
+ //  background-color: #ffffff;
+ //  opacity: 0.5;
+ //  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.wedding {
+  background: asset_url("eventpage/golfcourse.png") no-repeat center center fixed;
+}
+
+.garba, .mehndi, .pvidhi, .reception, .svidhi, .wedding {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

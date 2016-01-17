@@ -2,59 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-nav {
-  background-color: #fff !important;
+#date {
+  position: absolute;
+  top: 40%;
+  left: 340px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
 }
 
-.top-bar ul li a {
-  background-color: #fff !important;
-  color: black !important;
-  font-family: 'PT Sans', sans-serif !important;
+.engagement {
+  background: asset_url("story/engagement.jpg") no-repeat center center fixed;
 }
 
-.top-bar ul li a:hover {
-  color: #0078a0 !important; //teal blue
+.firstdate {
+  background: asset_url("story/bulls.jpg") no-repeat center center fixed;
 }
-
-.top-bar-section .right li a {
-  font-size: 15px;
-}
-
-nav .fi-heart {
-  color:#DC143C !important;
-}
-
-.toggle-topbar a {
-  background-color: #fff !important;
-}
-
 
 .homepage {
-	background: asset_url("mainpages/homepage-2.jpg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
+  background: asset_url("mainpages/homepage-2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
 }
 
-#paragshreya {
-	position: absolute;
-	top: 22%;
-	left: 160px;
-	color: white;
-	text-align: center;
-	font-size: 90px;
-	font-family: 'Dancing Script', cursive;
+.met {
+  background: asset_url("story/uiuc.png") no-repeat center center fixed;
 }
 
-#date {
-	position: absolute;
-	top: 40%;
-	left: 340px;
-	color: white;
-	font-size: 25px;
-	font-family: 'Dancing Script', cursive;
+nav {
+  background-color: #fff !important;
+}
+
+nav .fi-heart {
+  color:#DC143C !important;
+}
+
+.official {
+  background: asset_url("story/secondcity.jpg") no-repeat center center fixed;
 }
 
 .our-story .row {
@@ -80,24 +67,36 @@ nav .fi-heart {
   text-align: right;
 }
 
-.met {
-  background: asset_url("story/uiuc.png") no-repeat center center fixed;
-}
-
-.firstdate {
-  background: asset_url("story/bulls.jpg") no-repeat center center fixed;
-}
-
-.official {
-  background: asset_url("story/secondcity.jpg") no-repeat center center fixed;
+#paragshreya {
+  position: absolute;
+  top: 22%;
+  left: 160px;
+  color: white;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .proposal {
   background: asset_url("story/proposal.JPG") no-repeat center center fixed;
 }
 
-.engagement {
-  background: asset_url("story/engagement.jpg") no-repeat center center fixed;
+.top-bar ul li a {
+  background-color: #fff !important;
+  color: black !important;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+.top-bar ul li a:hover {
+  color: #0078a0 !important; //teal blue
+}
+
+.top-bar-section .right li a {
+  font-size: 15px;
+}
+
+.toggle-topbar a {
+  background-color: #fff !important;
 }
 
 .wday {
@@ -116,15 +115,8 @@ nav .fi-heart {
 // Small screens
 
 @media screen and (max-width: 39.9375em) {
-  .homepage {
-    background-position: -250px;
-  }
-
-  #paragshreya {
-    position: absolute;
-    top: 20%;
-    left: 40px;
-    font-size: 50px;
+  body {
+    overflow-x: hidden !important;
   }
 
   #date {
@@ -132,6 +124,22 @@ nav .fi-heart {
     top: 33%;
     left: 120px;
     font-size: 20px;
+  }
+
+  .engagement {
+    background-position: -200px 70px;
+  }
+
+  .homepage {
+    background-position: -250px;
+  }
+
+  .met {
+    background-position: -255px;
+  }
+
+  .official {
+    background-position: -550px;
   }
 
   .our-story .row {
@@ -150,27 +158,18 @@ nav .fi-heart {
     margin-bottom: 0px;
   }
 
-  .met {
-    background-position: -255px;
-  }
-
-  .official {
-    background-position: -550px;
+  #paragshreya {
+    position: absolute;
+    top: 20%;
+    left: 40px;
+    font-size: 50px;
   }
 
   .proposal {
     background-position: -140px -40px;
   }
 
-  .engagement {
-    background-position: -200px 70px;
-  }
-
   .wday {
     background-position: -310px 305px;
-  }
-
-   body {
-    overflow-x: hidden !important;
   }
 }

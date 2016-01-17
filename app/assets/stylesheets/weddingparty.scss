@@ -2,22 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.wedding-party {
-  background: asset_url("mainpages/weddingparty.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 0px 10px;
-  height: 100%;
-}
-
-.wprow .row {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .bride, .groom {
   text-align: center;
   padding-top: 50px;
@@ -44,16 +28,27 @@
   box-shadow: 10px 10px 5px grey;
 }
 
+.wedding-party {
+  background: asset_url("mainpages/weddingparty.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 10px;
+  height: 100%;
+}
+
+.wprow .row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Small screens
 
 @media screen and (max-width: 39.9375em) {
-  .wedding-party {
-    background-position: -335px 45px;
-  }
-
-  .pic img {
-    width: 150px;
+  body {
+    overflow-x: hidden !important;
   }
 
   .bride h3, .groom h3 {
@@ -64,7 +59,11 @@
     font-size: 14px;
   }
 
-  body {
-    overflow-x: hidden !important;
+  .pic img {
+    width: 150px;
+  }
+
+  .wedding-party {
+    background-position: -335px 45px;
   }
 }

@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+img {
+  margin: 0 auto;
+}
 
 .gallery {
   width: 800px;
@@ -9,10 +12,6 @@
   margin-right: auto;
   padding-top: 100px;
   padding-bottom: 50px;
-}
-
-img {
-  margin: 0 auto;
 }
 
 .gallery .reg img {
@@ -36,6 +35,10 @@ img {
 }
 
 @media screen and (max-width: 39.9375em) {
+  body {
+    overflow-x: hidden !important;
+  }
+
   .gallery {
     width: 400px
   }
@@ -46,9 +49,5 @@ img {
 
   .gallery .tall img {
     width: 200px;
-  }
-
-  body {
-    overflow-x: hidden !important;
   }
 }

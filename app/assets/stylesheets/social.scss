@@ -11,6 +11,16 @@
   height: 100%;
 }
 
+.social-media {
+  list-style-type: none;
+}
+
+.social-media li {
+  display: inline;
+  padding: 10px;
+  font-size: 60px;
+}
+
 @media screen and (max-width: 39.9375em) {
   .social {
     background-position: -270px;
@@ -18,5 +28,9 @@
 
   body {
     overflow-x: hidden !important;
+  }
+
+  .social-media li {
+    font-size: 40px;
   }
 }

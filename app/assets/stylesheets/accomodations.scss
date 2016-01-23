@@ -13,42 +13,80 @@
   height: 100%;
 }
 
-/* Used on Accomodations & RSVP page */
-
-.coming-soon {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background: transparent;
-  height: 500px;
-  padding-top: 208.5px;
-  padding-bottom: 208.5px;
+.border {
+  border-right: solid black 1px;
 }
 
-.coming-soon h1 {
+.hotel-info {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hotel-info a.button {
+  font-family: 'PT Sans', sans-serif;
+  margin: 10px;
+}
+
+.hotel-info .friends {
+  margin-top: 32px;
+}
+
+.hotel-info h3 {
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 40px;
   color: #0078a0; /*teal blue*/
 }
 
+.hotel-info p {
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 0px;
+}
+
+.quick-links {
+  margin-top: 100px;
+}
+
+.quick-links a {
+    font-size: 16px !important;
+}
+
+.quick-links a:hover {
+  background-color: #C0C0C0 !important /*grey*/;
+}
+
+.quick-links .button {
+  background-color: #f5f5f5 !important; /*light grey*/
+  color: #0078a0 !important; /*teal blue*/
+}
+
+.quick-links h3, .quick-links p {
+  margin-bottom: 20px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 /* Small screens */
 
 @media screen and (max-width: 39.9375em) {
-
   .accommodations {
     background-position: -300px 45px;
   }
 
-  .coming-soon {
-    height: 400px;
-    padding-top: 165px;
-    padding-bottom: 165px;
+  .friends {
+    padding-top: 50px;
   }
 
-  .coming-soon h1 {
-    font-size: 50px;
+  .hotel-info h3 {
+  font-size: 30px;
+  }
+
+  .quick-links a {
+    font-size: 16px !important;
   }
 
   body {

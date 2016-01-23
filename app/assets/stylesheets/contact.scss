@@ -19,6 +19,7 @@
 .contact-text p {
     font-family: 'PT Sans', sans-serif;
     color: black;
+    margin-bottom: 0px;
 }
 
 .contact-text p a {
@@ -31,6 +32,10 @@
 
 .contact-text {
   text-align: center;
+}
+
+.questions {
+  margin-bottom: 50px;
 }
 
 /* Medium screens and up */
@@ -53,8 +58,8 @@
   }
 
   .contact-text {
-    padding-top: 239px;
-    padding-bottom: 239px;
+    padding-top: 196px;
+    padding-bottom: 196px;
   }
 
   .fi-telephone, .fi-mail {
@@ -83,12 +88,17 @@
   }
 
   .contact-text{
-    padding-top: 211px;
-    padding-bottom: 211px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .fi-telephone, .fi-mail {
     font-size: 15px;
+  }
+
+  .questions {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   body {

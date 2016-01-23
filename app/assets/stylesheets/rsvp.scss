@@ -30,6 +30,17 @@
   color: #0078a0; /*teal blue*/
 }
 
+ul.rsvp-icon {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.rsvp-icon li {
+  display: inline !important;
+  font-size: 60px;
+}
+
 @media screen and (max-width: 39.9375em) {
   .coming-soon {
     height: 400px;
@@ -39,6 +50,10 @@
 
   .coming-soon h1 {
     font-size: 50px;
+  }
+
+  .rsvp-icon li {
+    font-size: 40px;
   }
 
   body {

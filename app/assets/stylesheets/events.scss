@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.button {
+  border-radius: 10px !important;
+  box-shadow: 5px 5px 5px grey !important;
+}
+
 .epage {
   background: asset_url("mainpages/eventspage.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -26,12 +31,14 @@
 .event-text h5 {
   color: white;
   font-size: 25px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .event-text p {
   color: white;
   font-size: 25px;
   margin-bottom: 0px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .event-text a {

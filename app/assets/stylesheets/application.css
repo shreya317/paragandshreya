@@ -17,18 +17,12 @@
 
  */
 
-.down {
-  width: 100%;
+.fi-arrow-down {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  text-align: right;
-  top: 400px;
-}
-
-.fi-arrow-down {
-  position: absolute;
-  right: -300px;
+  top: 720px;
+  right: 20px;
   font-size: 40px;
   color: white;
 }

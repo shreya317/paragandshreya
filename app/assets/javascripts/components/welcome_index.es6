@@ -1,4 +1,3 @@
-
 const WelcomeIndex = React.createClass({
   render() {
     return (

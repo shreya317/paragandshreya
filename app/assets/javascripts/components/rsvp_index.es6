@@ -1,4 +1,3 @@
-
 const RsvpIndex = React.createClass({
   render() {
     return (

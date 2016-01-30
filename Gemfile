@@ -31,6 +31,8 @@ gem 'foundation-rails', '5.5.2.1'
 gem 'rails_12factor', '0.0.3'
 gem 'foundation-icons-sass-rails', '3.0.0'
 gem 'react-rails', '~> 1.5.0'
+gem 'sprockets', '>=3.0.0.beta'
+gem 'sprockets-es6', '0.8.2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

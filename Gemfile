@@ -9,8 +9,6 @@ gem 'pg', '0.18.4'
 gem 'sass-rails', '5.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.7.2'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

@@ -183,7 +183,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug (= 8.2.1)
-  coffee-rails (= 4.1.0)
   foundation-icons-sass-rails (= 3.0.0)
   foundation-rails (= 5.5.2.1)
   jbuilder (= 2.4.0)

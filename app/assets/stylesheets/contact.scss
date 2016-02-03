@@ -8,7 +8,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 900px;
 }
 
 .contact-text h3 {
@@ -73,6 +73,7 @@
 @media screen and (max-width: 39.9375em) {
   .contact {
   background-position: -250px;
+  height: 600px;
   }
 
   .contact-text h3 {

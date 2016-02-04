@@ -5,16 +5,17 @@ const SocialIndex = React.createClass({
         <a id="tothetop"></a>
         <div className="social"></div>
 
-        <div className="coming-soon media">
+        <div className="media">
           <div className="row">
-            <h1>Coming soon</h1>
-            <ul className="social-media">
-              <li><i className="fi-social-instagram"></i></li>
-              <li><i className="fi-social-twitter"></i></li>
-              <li><i className="fi-social-facebook"></i></li>
-              <h3><a href="https://www.instagram.com/explore/tags/paragandshreya/" target="blank">#ParagAndShreya</a></h3>
-            </ul>
+            <p>We love social media and we need your help!</p>
+            <p>To document our wedding festivities, please tag any pictures with the hashtag below.</p>
+            <h3>#ParagAndShreya</h3>
           </div>
+          <ul className="social-media">
+            <li><i className="fi-social-instagram"></i></li>
+            <li><i className="fi-social-twitter"></i></li>
+            <li><i className="fi-social-facebook"></i></li>
+          </ul>
         </div>
       </div>
     )

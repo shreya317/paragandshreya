@@ -1,1 +1,8 @@
 <%= react_component('SocialIndex') %>
+
+<div class="row ig-feed">
+    <h3>Live Instagram Feed</h3>
+    <% @pics.each do |p| %>
+      <img src="<%=p%>" class="ig-pic">
+  <%end %>
+</div>

@@ -25,7 +25,9 @@ gem 'sdoc', '0.4.1', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem "figaro"
 gem 'foundation-rails', '5.5.2.1'
+gem 'instagram'
 gem 'rails_12factor', '0.0.3'
 gem 'foundation-icons-sass-rails', '3.0.0'
 gem 'react-rails', '~> 1.5.0'

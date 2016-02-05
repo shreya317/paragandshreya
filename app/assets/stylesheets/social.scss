@@ -8,10 +8,15 @@
 }
 
 .ig-feed {
+  height: 600px;
+  overflow-y: auto;
+}
+
+.social-feed {
   text-align: center;
 }
 
-.ig-feed h3 {
+.social-feed h3 {
   font-family: 'Dancing Script', cursive;
   font-size: 40px;
   color: #0078a0; /*teal blue*/
@@ -73,6 +78,10 @@ ul.social-media {
 
   .social-media li {
     font-size: 40px;
+  }
+
+  .twitter-feed, .ig-feed {
+   margin: 20px;
   }
 
   body {

@@ -8,7 +8,7 @@ const SocialIndex = React.createClass({
         <div className="media">
           <div className="row">
             <p>We love social media and we need your help!</p>
-            <p>To document our wedding festivities, please tag any pictures with the hashtag below.</p>
+            <p>To document our wedding festivities, please tag any pictures or posts with the hashtag below.</p>
             <h3>#ParagAndShreya</h3>
           </div>
           <ul className="social-media">

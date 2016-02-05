@@ -1,8 +1,20 @@
 <%= react_component('SocialIndex') %>
 
-<div class="row ig-feed">
-    <h3>Live Instagram Feed</h3>
-    <% @pics.each do |p| %>
-      <img src="<%=p%>" class="ig-pic">
-  <%end %>
+<div class="row social-feed">
+    <div class="large-6 columns">
+      <h3>Live Instagram Feed</h3>
+      <div class="ig-feed">
+        <% @pics.each do |p| %>
+          <img src="<%=p%>" class="ig-pic">
+        <%end %>
+      </div>
+    </div>
+
+  <div class="large-6 columns">
+    <div class="twitter-feed">
+      <h3>Live Twitter Feed</h3>
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/ParagAndShreya" data-widget-id="695704259711504384" width="400">#ParagAndShreya Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
 </div>

@@ -2,6 +2,7 @@ const WeddingPartyIndex = React.createClass({
   renderBridesFamily(images) {
     return (
       <div className="large-6 columns bride">
+        <a id="tonextdiv"></a>
         <h3>Bride's Family</h3>
 
         <div className="pic"><img src={images.anil} /></div>

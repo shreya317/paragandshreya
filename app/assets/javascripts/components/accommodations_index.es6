@@ -4,7 +4,7 @@ const AccommodationsIndex = React.createClass({
       <div>
         <a id="tothetop"></a>
         <div className="accommodations"></div>
-
+        <a id="tonextdiv"></a>
         <div className="hotel-info">
           <div className="row">
             <div className="large-6 columns border">

@@ -35,4 +35,20 @@ $(document).ready(function(){
           'scrollTop': $target.offset().top
       }, 900, 'swing');
   });
+
+  $('a[href^="#tonextdiv"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $("a#tonextdiv");
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing');
+  });
+
+  if ($("div").hasClass("gallery")) {
+    $(".down").hide();
+  };
+
 });

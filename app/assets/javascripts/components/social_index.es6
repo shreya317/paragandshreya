@@ -4,7 +4,7 @@ const SocialIndex = React.createClass({
       <div>
         <a id="tothetop"></a>
         <div className="social"></div>
-
+        <a id="tonextdiv"></a>
         <div className="media">
           <div className="row">
             <p>We love social media and we need your help!</p>

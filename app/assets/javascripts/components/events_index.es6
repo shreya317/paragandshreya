@@ -8,6 +8,7 @@ const EventsIndex = React.createClass({
         <div className="mehndi">
           <div className="row">
              <div className="transbox">
+              <a id="tonextdiv"></a>
               <div className="event-text">
                 <h3>Shreya's Mehndi Night</h3>
                 <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MTBoajJrZGlmaWlxZmtjZGg3MGI5ZnZyMG8gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Wednesday, August 3rd, 2016 at 5:00 PM</h5>

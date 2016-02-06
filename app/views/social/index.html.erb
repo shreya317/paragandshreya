@@ -1,14 +1,13 @@
-<a id="tothetop"></a>
-<div class="social"></div>
+<%= react_component('SocialIndex') %>
 
-<div class="coming-soon media">
-  <div class="row">
-    <h1>Coming soon</h1>
-    <ul class="social-media">
-      <li><i class="fi-social-instagram"></i></li>
-      <li><i class="fi-social-twitter"></i></li>
-      <li><i class="fi-social-facebook"></i></li>
-      <h3><a href="https://www.instagram.com/explore/tags/paragandshreya/" target="blank">#ParagAndShreya</a></h3>
-    </ul>
+<div class="row social-feed">
+  <%= react_component('Instagram', { instagrams: @ig_posts}) %>
+
+  <div class="large-6 columns">
+    <div class="twitter-feed">
+      <h3>Live Twitter Feed</h3>
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/ParagAndShreya" data-widget-id="695704259711504384" width="400">#ParagAndShreya Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
   </div>
 </div>

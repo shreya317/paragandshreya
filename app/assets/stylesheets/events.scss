@@ -13,7 +13,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 900px;
 }
 
 .event-text {
@@ -94,6 +94,10 @@
 @media screen and (max-width: 39.9375em) {
   .mehndi, .svidhi, .pvidhi, .garba, .wedding, .reception {
     height: 500px;
+  }
+
+  .epage {
+    height: 600px;
   }
 
   .event-text {

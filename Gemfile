@@ -9,8 +9,6 @@ gem 'pg', '0.18.4'
 gem 'sass-rails', '5.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.7.2'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -27,10 +25,14 @@ gem 'sdoc', '0.4.1', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem "figaro", '1.1.1'
 gem 'foundation-rails', '5.5.2.1'
+gem 'instagram', '1.1.6'
 gem 'rails_12factor', '0.0.3'
 gem 'foundation-icons-sass-rails', '3.0.0'
-
+gem 'react-rails', '~> 1.5.0'
+gem 'sprockets', '>=3.0.0.beta'
+gem 'sprockets-es6', '0.8.2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

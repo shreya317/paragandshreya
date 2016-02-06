@@ -17,6 +17,13 @@
 
  */
 
+.fi-arrow-down {
+  font-size: 40px;
+  color: white;
+  margin-left: 10px;
+  text-shadow: 5px 0 5px #000;
+}
+
 .fi-arrow-up {
   font-size: 30px;
 }
@@ -33,6 +40,14 @@
 .footer .row {
   padding: 15px;
   font-family: 'PT Sans', sans-serif;
+}
+
+.row.down {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .top {

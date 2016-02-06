@@ -15,6 +15,10 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require react
+//= require react_ujs
+//= require components
+//= require lodash
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
@@ -31,4 +35,20 @@ $(document).ready(function(){
           'scrollTop': $target.offset().top
       }, 900, 'swing');
   });
+
+  $('a[href^="#to-next-div"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $("a#to-next-div");
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing');
+  });
+
+  if ($("div").hasClass("gallery")) {
+    $(".down").hide();
+  };
+
 });

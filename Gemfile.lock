@@ -196,10 +196,10 @@ PLATFORMS
 
 DEPENDENCIES
   byebug (= 8.2.1)
-  figaro
+  figaro (= 1.1.1)
   foundation-icons-sass-rails (= 3.0.0)
   foundation-rails (= 5.5.2.1)
-  instagram
+  instagram (= 1.1.6)
   jbuilder (= 2.4.0)
   jquery-rails (= 4.1.0)
   jquery-turbolinks (= 2.1.0)

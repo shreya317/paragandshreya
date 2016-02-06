@@ -8,9 +8,10 @@ const EventsIndex = React.createClass({
         <div className="mehndi">
           <div className="row">
              <div className="transbox">
+              <a id="to-next-div"></a>
               <div className="event-text">
                 <h3>Shreya's Mehndi Night</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MTBoajJrZGlmaWlxZmtjZGg3MGI5ZnZyMG8gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Wednesday, August 3rd, 2016 at 5:00 PM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MTBoajJrZGlmaWlxZmtjZGg3MGI5ZnZyMG8gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Wednesday, August 3rd, 2016 at 5:00 PM</h5>
                 <p>Patel Residence</p>
                 <p>9443 Lotus Ave.</p>
                 <p>Skokie, IL 60077</p>
@@ -25,7 +26,7 @@ const EventsIndex = React.createClass({
             <div className="transbox">
               <div className="event-text">
                 <h3>Shreya's Manglik Prasango</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=ZmU5MmE3NnBmMTI0ZjU0NGI3OXViMW10Z28gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Thursday, August 4th, 2016 at 2:30 PM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=ZmU5MmE3NnBmMTI0ZjU0NGI3OXViMW10Z28gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Thursday, August 4th, 2016 at 2:30 PM</h5>
                 <p>Patel Residence</p>
                 <p>9443 Lotus Ave.</p>
                 <p>Skokie, IL 60077</p>
@@ -40,7 +41,7 @@ const EventsIndex = React.createClass({
             <div className="transbox">
               <div className="event-text">
                 <h3>Parag's Manglik Prasango</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YnQ4bzk0MjkyYTg4bDVzOGJxOThpbGxzam8gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Friday, August 5th, 2016 at 10:00 AM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YnQ4bzk0MjkyYTg4bDVzOGJxOThpbGxzam8gcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Friday, August 5th, 2016 at 10:00 AM</h5>
                 <p>Comfort Inn</p>
                 <p>1235 Lakeview Dr.</p>
                 <p>Romeoville, IL 60446</p>
@@ -55,7 +56,7 @@ const EventsIndex = React.createClass({
             <div className="transbox">
               <div className="event-text">
                 <h3>Raas-Garba</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YzFnaTVwMjlzYWQ5NXVrazk1NmNmZnRscDggcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Friday, August 5th, 2016 at 6:30 PM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YzFnaTVwMjlzYWQ5NXVrazk1NmNmZnRscDggcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Friday, August 5th, 2016 at 6:30 PM</h5>
                 <p>Ashton Place</p>
                 <p>341 75th St.</p>
                 <p>Willowbrook, IL 60527</p>
@@ -70,7 +71,7 @@ const EventsIndex = React.createClass({
             <div className="transbox">
               <div className="event-text">
                 <h3>Wedding</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aHFmc2s5cG5samhnc2o1Zmh2MGM2Y2lvdTggcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Saturday, August 6th, 2016 at 9:00 AM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=aHFmc2s5cG5samhnc2o1Zmh2MGM2Y2lvdTggcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Saturday, August 6th, 2016 at 9:00 AM</h5>
                 <p>Bolingbrook Golf Club</p>
                 <p>2001 Rodeo Dr.</p>
                 <p>Bolingbrook, IL 60490</p>
@@ -85,7 +86,7 @@ const EventsIndex = React.createClass({
             <div className="transbox">
               <div className="event-text">
                 <h3>Reception</h3>
-                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bThhNWdpNWppNGQzOTU2b3ZkMHVvZGoxcWsgcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i class="fi-calendar"></i></a> Saturday, August 6th, 2016 at 6:30 PM</h5>
+                <h5><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bThhNWdpNWppNGQzOTU2b3ZkMHVvZGoxcWsgcGFyYWdhbmRzaHJleWFAbQ&tmsrc=paragandshreya%40gmail.com" target="_blank"><i className="fi-calendar"></i></a> Saturday, August 6th, 2016 at 6:30 PM</h5>
                 <p>Bolingbrook Golf Club</p>
                 <p>2001 Rodeo Dr.</p>
                 <p>Bolingbrook, IL 60490</p>

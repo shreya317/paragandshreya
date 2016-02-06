@@ -11,7 +11,7 @@ const WelcomeIndex = React.createClass({
         <a id="story"></a>
 
         <div className="our-story">
-
+          <a id="to-next-div"></a>
           <div className="row">
             <h3>We first met</h3>
             <p>January 2009</p>

@@ -4,12 +4,12 @@ const AccommodationsIndex = React.createClass({
       <div>
         <a id="tothetop"></a>
         <div className="accommodations"></div>
-
+        <a id="to-next-div"></a>
         <div className="hotel-info">
           <div className="row">
             <div className="large-6 columns border">
-              <h3>Family & Family Friends <br>of Shreya & Parag</br></h3>
-              <br></br>
+              <h3>Family & Family Friends <br/>of Shreya & Parag</h3>
+              <br />
               <p><b>Comfort Inn - Romeoville</b></p>
               <p>1235 Lakeview Dr.</p>
               <p>Romeoville, IL 60446</p>

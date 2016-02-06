@@ -9,6 +9,7 @@
   color: white;
   font-size: 25px;
   font-family: 'Dancing Script', cursive;
+  text-shadow: 5px 0 5px #000;
 }
 
 .engagement {
@@ -75,6 +76,7 @@ nav .fi-heart {
   text-align: center;
   font-size: 90px;
   font-family: 'Dancing Script', cursive;
+  text-shadow: 5px 0 5px #000;
 }
 
 .proposal {
@@ -128,6 +130,10 @@ nav .fi-heart {
 
   .engagement {
     background-position: -200px 70px;
+  }
+
+  .fi-arrow-down {
+    font-size: 30px !important;
   }
 
   .homepage {

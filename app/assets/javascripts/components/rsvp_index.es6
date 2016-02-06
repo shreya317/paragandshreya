@@ -6,6 +6,7 @@ const RsvpIndex = React.createClass({
         <div className="rsvp"></div>
 
         <div className="coming-soon">
+          <a id="to-next-div"></a>
           <div className="row">
             <h1>Coming soon</h1>
             <ul className="rsvp-icon">

@@ -1,14 +1,7 @@
 <%= react_component('SocialIndex') %>
 
 <div class="row social-feed">
-    <div class="large-6 columns">
-      <h3>Live Instagram Feed</h3>
-      <div class="ig-feed">
-        <% @pics.each do |p| %>
-          <img src="<%=p%>" class="ig-pic">
-        <%end %>
-      </div>
-    </div>
+  <%= react_component('Instagram', { instagrams: @ig_posts}) %>
 
   <div class="large-6 columns">
     <div class="twitter-feed">

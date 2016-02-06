@@ -6,7 +6,7 @@ const ContactIndex = React.createClass({
         <div className="contact"></div>
 
         <div className="contact-info">
-          <a id="tonextdiv"></a>
+          <a id="to-next-div"></a>
           <div className="row">
             <div className="contact-text">
               <div className="questions">

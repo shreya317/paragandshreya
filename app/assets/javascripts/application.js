@@ -36,11 +36,11 @@ $(document).ready(function(){
       }, 900, 'swing');
   });
 
-  $('a[href^="#tonextdiv"]').on('click',function (e) {
+  $('a[href^="#to-next-div"]').on('click',function (e) {
       e.preventDefault();
 
       var target = this.hash;
-      var $target = $("a#tonextdiv");
+      var $target = $("a#to-next-div");
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top

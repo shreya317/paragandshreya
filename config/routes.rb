@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
-  get 'social/index'
+  get '/social' => 'social#index'
 
-  get 'gallery/index'
+  get '/gallery' => 'gallery#index'
 
-  get 'contact/index'
+  get '/contact' => 'contact#index'
 
-  get 'accomodations/index'
+  get '/accomodations' => 'accomodations#index'
 
-  get 'events/index'
+  get '/events' => 'events#index'
 
-  get 'rsvp/index'
+  get '/rsvp' => 'rsvp#index'
 
-  get 'weddingparty/index'
+  get '/weddingparty' => 'weddingparty#index'
 
-  get 'welcome/index'
+  get '/welcome' => 'welcome#index'
 
   root 'welcome#index'
 

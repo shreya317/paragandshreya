@@ -3,7 +3,7 @@ class CreateRsvps < ActiveRecord::Migration
     create_table :rsvps do |t|
       t.references :guest, index: true, null: false
       t.references :event, index: true, null: false
-      t.string :status, default: nil
+      t.string :status, default: '--'
 
       t.timestamps null: false
     end

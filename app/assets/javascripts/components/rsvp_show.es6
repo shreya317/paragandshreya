@@ -1,11 +1,8 @@
 const RsvpShow = React.createClass({
 
   renderEventName(eventId) {
-    if (eventId === 1) {
-      return 'Wedding'
-    } else {
-      return 'Reception'
-    }
+    let events = this.props.events
+    return events[eventId]
   },
 
   renderGuestData() {

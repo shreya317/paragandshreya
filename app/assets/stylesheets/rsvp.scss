@@ -11,21 +11,8 @@
   height: 900px;
 }
 
-.coming-soon {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background: transparent;
-  height: 500px;
-  padding-top: 208.5px;
-  padding-bottom: 208.5px;
-}
-
-.coming-soon h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
-  color: #0078a0; /*teal blue*/
+.rsvp-email {
+  margin-top: 20px;
 }
 
 ul.rsvp-icon {
@@ -37,6 +24,66 @@ ul.rsvp-icon {
 .rsvp-icon li {
   display: inline !important;
   font-size: 60px;
+}
+
+// Sign in section
+
+.sign-in, .rsvp-form {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.sign-in .button, .rsvp-form .button {
+  border-radius: 10px !important;
+  box-shadow: 5px 5px 5px grey !important;
+}
+
+.sign-in form {
+  width: 400px;
+  margin: 0px auto;
+}
+
+.sign-in h1, .rsvp-form h1, .song-requests h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #0078a0; /*teal blue*/
+  text-align: center;
+}
+
+.sign-in input[type="text"] {
+  width: 400px;
+}
+
+.sign-in p, .rsvp-form p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+// RSVP section
+
+.rsvp-form .event-headers {
+  padding-bottom: 30px;
+}
+
+.rsvp-form {
+  margin: 0px auto;
+}
+
+.rsvp-form input[name="email_address"] {
+  width: 400px;
+}
+
+.rsvp-form textarea {
+  width: 700px;
+}
+
+.rsvp-form .event-headers label {
+  font-size: 16px;
+
+}
+
+.rsvp-form select {
+  width: 60px;
 }
 
 @media screen and (max-width: 39.9375em) {

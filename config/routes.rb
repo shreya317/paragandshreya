@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   get '/rsvp' => 'rsvp#index'
 
+  get '/rsvp/user' => 'rsvp#show'
+
+  post '/rsvp/update' => 'rsvp#update'
+
   get '/weddingparty' => 'weddingparty#index'
 
   get '/welcome' => 'welcome#index'

@@ -21,9 +21,7 @@ class RsvpController < ApplicationController
 
     events = Event.all
     @events_hash = {}
-    events.map do |event|
-      @events_hash[event.id] = event.event_name
-    end
+    events.map { |event| @events_hash[event.id] = event.event_name }
 
     @guest_data = guests.map do |guest|
       rsvps = Rsvp.where(guest_id: guest.id)

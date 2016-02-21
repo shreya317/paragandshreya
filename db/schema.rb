@@ -42,11 +42,11 @@ ActiveRecord::Schema.define(version: 20160221021156) do
   add_index "guests", ["family_id"], name: "index_guests_on_family_id", using: :btree
 
   create_table "rsvps", force: :cascade do |t|
-    t.integer  "guest_id",   null: false
-    t.integer  "event_id",   null: false
-    t.string   "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "guest_id",                  null: false
+    t.integer  "event_id",                  null: false
+    t.string   "status",     default: "--"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id", using: :btree

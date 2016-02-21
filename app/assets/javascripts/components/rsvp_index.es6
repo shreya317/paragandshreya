@@ -17,7 +17,7 @@ const RsvpIndex = React.createClass({
               <input name="commit" type="submit" value="Search" className="button tiny"/>
             </form>
           </div>
-          <p className="rsvp-email">You may also R.S.V.P.  via e-mail to<a href="mailto:paragandshreya@gmail.com">&nbsp;paragandshreya@gmail.com</a></p>
+          <p className="rsvp-email">You may also R.S.V.P. via e-mail to<a href="mailto:paragandshreya@gmail.com">&nbsp;paragandshreya@gmail.com</a></p>
         </div>
       </div>
     )

@@ -1,9 +1,9 @@
 class CreateRsvps < ActiveRecord::Migration
   def change
     create_table :rsvps do |t|
-      t.references :guest, index: true
-      t.references :event, index: true
-      t.string :status
+      t.references :guest, index: true, null: false
+      t.references :event, index: true, null: false
+      t.string :status, default: nil
 
       t.timestamps null: false
     end

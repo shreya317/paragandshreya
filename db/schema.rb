@@ -11,23 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221020322) do
+ActiveRecord::Schema.define(version: 20160221021156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "events", force: :cascade do |t|
+    t.string   "event_name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "families", force: :cascade do |t|
-    t.string   "family_name"
+    t.string   "family_name", null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "guests", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "full_name"
+    t.string   "first_name", null: false
+    t.string   "last_name",  null: false
+    t.string   "full_name",  null: false
     t.string   "email"
-    t.string   "zip"
+    t.string   "zip",        null: false
     t.integer  "family_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,5 +41,18 @@ ActiveRecord::Schema.define(version: 20160221020322) do
 
   add_index "guests", ["family_id"], name: "index_guests_on_family_id", using: :btree
 
+  create_table "rsvps", force: :cascade do |t|
+    t.integer  "guest_id",   null: false
+    t.integer  "event_id",   null: false
+    t.string   "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id", using: :btree
+  add_index "rsvps", ["guest_id"], name: "index_rsvps_on_guest_id", using: :btree
+
   add_foreign_key "guests", "families"
+  add_foreign_key "rsvps", "events"
+  add_foreign_key "rsvps", "guests"
 end

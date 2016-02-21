@@ -8,11 +8,21 @@ class RsvpController < ApplicationController
     zip  = params.fetch('zip')
     guest = Guest.where(full_name: name).where(zip: zip)
     if guest.count == 0
-      # handle errors
+      # TODO handle errors
     end
     if guest.count == 1
       family = Family.find(guest.first.family_id)
       guests = family.guests
+    end
+
+    if guest.count > 1
+      # TODO show table of options
+    end
+
+    events = Event.all
+    @events_hash = {}
+    events.map do |event|
+      @events_hash[event.id] = event.event_name
     end
 
     @guest_data = guests.map do |guest|

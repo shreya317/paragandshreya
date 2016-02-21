@@ -35,7 +35,7 @@ const RsvpShow = React.createClass({
             <select name={rsvp.id} ref='rsvpForm' defaultValue={rsvp.status}>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
-              <option value={null}></option>
+              <option value="--">--</option>
             </select>
           </div>
         </div>

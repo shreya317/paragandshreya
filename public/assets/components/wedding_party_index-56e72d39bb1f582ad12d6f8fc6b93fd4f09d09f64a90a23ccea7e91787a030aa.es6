@@ -3,7 +3,7 @@ const WeddingPartyIndex = React.createClass({
     return (
       <div className="large-6 columns bride">
         <a id="to-next-div"></a>
-        <h3>Bride's Family</h3>
+        <h3>Bride&apos;s Family</h3>
 
         <div className="pic"><img src={images.anil} /></div>
         <p>Late Anil Patel - Father</p>
@@ -55,7 +55,7 @@ const WeddingPartyIndex = React.createClass({
   renderGroomsFamily(images) {
     return (
       <div className="large-6 columns groom">
-        <h3>Groom's Family</h3>
+        <h3>Groom&apos;s Family</h3>
 
         <div className="pic"><img src={images.navin} /></div>
         <p>Navinchandra Dadhaniya - Father</p>

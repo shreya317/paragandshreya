@@ -85,6 +85,7 @@ const AccommodationsIndex = React.createClass({
                   <li><a href="http://cumin-chicago.com/index.html" target="_blank">Cumin</a></li>
                   <li><a href="http://himalayanrestaurant.com/" target="_blank">Himalyan Restaurant</a></li>
                   <li><a href="http://www.cafebabareeba.com/" target="_blank">Cafe Ba Ba Reeba</a></li>
+                  <li><a href="http://www.pita-inn.com/home" target="_blank">Pita Inn</a></li>
                 </ul>
                 
                 <ul>

@@ -61,7 +61,7 @@ ul.rsvp-icon {
 
 // RSVP section
 
-.rsvp-form .event-headers {
+.rsvp-form .guest {
   padding-bottom: 30px;
 }
 
@@ -73,17 +73,37 @@ ul.rsvp-icon {
   width: 400px;
 }
 
-.rsvp-form textarea {
-  width: 700px;
+.rsvp-form label  {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.rsvp-form label.name {
+  padding-top: 30px;
 }
 
 .rsvp-form .event-headers label {
-  font-size: 16px;
+}
 
+.rsvp-form-section {
+  padding-top: 20px;
 }
 
 .rsvp-form select {
   width: 60px;
+}
+
+// RSVP Thank You
+
+.rsvp-thank-you {
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.rsvp-thank-you h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #0078a0; /*teal blue*/
 }
 
 @media screen and (max-width: 39.9375em) {

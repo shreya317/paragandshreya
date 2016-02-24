@@ -6,14 +6,13 @@ const RsvpIndex = React.createClass({
         <div className="rsvp"></div>
 
         <div className="sign-in">
+          <a id="to-next-div"></a>
           <div className="row">
             <h1>Please sign-in to R.S.V.P.</h1>
             <p>KINDLY RESPOND BY JUNE 1, 2016.</p>
             <form action='/rsvp/user' method='get'>
-              Enter Name
-              <input ref='name' name='name' type='text' placeholder='Enter Name' />
-              Enter Zip
-              <input ref='zip' name='zip' type='text' placeholder='Enter Zip' />
+              <input ref='name' name='name' type='text' placeholder='First and Last Name' />
+              <input ref='zip' name='zip' type='text' placeholder='ZIP Code' />
               <input name="commit" type="submit" value="Search" className="button tiny"/>
             </form>
           </div>

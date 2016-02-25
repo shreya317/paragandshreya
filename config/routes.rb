@@ -9,11 +9,17 @@ Rails.application.routes.draw do
 
   get '/events' => 'events#index'
 
+  get '/songrequests' => 'songrequests#index'
+
   get '/rsvp' => 'rsvp#index'
 
   get '/weddingparty' => 'weddingparty#index'
 
   get '/welcome' => 'welcome#index'
+
+  post '/songrequests/create'
+
+  get '/songrequests/list'
 
   root 'welcome#index'
 

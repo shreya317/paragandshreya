@@ -1,0 +1,33 @@
+// Place all the styles related to the songrequests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.song-requests {
+  background: asset_url("mainpages/songrequests.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 20px;
+  height: 900px;
+}
+
+.song-requests-form h1 {
+	font-family: 'Dancing Script', cursive;
+	color: #0078a0;
+	text-align: center;
+}
+
+.song-requests-form, .song-select-form {
+  width: 500px;
+  margin: 0px auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.request-list {
+  height: 900px;
+}
+
+.request_success {
+  text-align: center;
+}

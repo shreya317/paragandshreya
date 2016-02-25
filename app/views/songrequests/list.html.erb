@@ -1,0 +1,23 @@
+<a id="tothetop"></a>
+<div class="row">
+	<div class= "request-list">
+		<table>
+		  <thead>
+		    <tr>
+		    	<th> Votes</th>
+		      <th width="300">Title</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<% if @request_list %>
+		    	<% @request_list.each do |request| %>
+		    		<tr>
+		    			<td><%=request.vote%></td>
+		    			<td><%=request.title%></td>
+		   			</tr>
+		    	<%end%>  
+		    <%end%>	
+		  </tbody>
+		</table>
+	</div>
+</div>

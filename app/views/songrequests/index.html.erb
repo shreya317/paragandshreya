@@ -1,0 +1,28 @@
+<%= react_component('SongRequestsIndex', {songs: @songs} ) %>
+
+
+<% if flash[:request_success] %>
+	<div class="row">
+		<h3 class="request-success"><%=flash[:request_success]%></h3>
+	</div>
+<%end%>
+	
+<% if @songs %>
+	<form class="song-select-form" action="/songrequests/create" method="post">
+		<div class="row">
+			<div class="medium-12 columns">
+				<p>Results for: <%=params[:search]%></p>	
+				<label>Please select a song</label>
+				<select name="title">
+					<% @songs.each do |s| %>
+						<%title = s.name%>
+						<%artist = s.artists.first.name%>
+						<%song = title + " " + artist%>
+						<option value=<%=title%>> <%=title%> by <%=artist%></option>
+					<%end%>
+				</select>
+			</div>
+			<input type="submit" value="Submit" class="button tiny"/>
+		</div>
+	</form>
+<%end%>

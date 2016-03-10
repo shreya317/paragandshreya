@@ -30,13 +30,13 @@ const RsvpShow = React.createClass({
   renderEventHeaders(rsvps) {
     let rsvp_headers = _.map(rsvps, (rsvp) => {
       return (
-       <div key={rsvp.id}>
-        <div className="medium-2 small-2 column">
-           <div className="event-headers">
-            <label>{this.renderEventName(rsvp.event_id)}</label>
+        <div key={rsvp.id}>
+          <div className="medium-2 small-2 column">
+            <div className="event-headers">
+              <label>{this.renderEventName(rsvp.event_id)}</label>
+            </div>
           </div>
-        </div>
-       </div> 
+        </div> 
       )
     })
     return rsvp_headers
@@ -61,9 +61,9 @@ const RsvpShow = React.createClass({
 
   renderFamilyMessage() {
     return (
-       <div className="row">
+      <div className="row">
         <div className="medium-12 small-12 columns">
-            <textarea name="message" placeholder="Message for the couple"></textarea>
+          <textarea name="message" placeholder="Message for the couple"></textarea>
         </div>
       </div> 
     )

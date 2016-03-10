@@ -3,7 +3,7 @@
 		<div class="medium-12 columns">
 			<label><h5>View RSVP by Event</h5></label>
 			<select name="event">
-					<option value="--"></option>
+				<option value="--"></option>
 				<% @event_list.each do |e| %>
 					<option value=<%=e.event_name%>> <%=e.event_name%></option>
 				<%end%>
@@ -41,11 +41,11 @@
 	    </tr>
 	  </thead>
 	  <tbody>
-    		<tr>
-    			<td><%=@attending%></td>
-    			<td><%=@not_attending%></td>
-    			<td><%=@no_reply%></td>
-   			</tr> 
+  		<tr>
+  			<td><%=@attending%></td>
+  			<td><%=@not_attending%></td>
+  			<td><%=@no_reply%></td>
+ 			</tr> 
 	  </tbody>
 	</table>
 <%end%>

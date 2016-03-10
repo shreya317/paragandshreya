@@ -17,25 +17,28 @@
 }
 
 .event-text {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  margin-top: 104px;
+  margin-bottom: 104px;
+  padding: 30px;
   text-align: center;
 }
 
 .event-text h3 {
   font-family: 'Dancing Script', cursive;
-  color: white;
+  color: black;
   font-size: 70px;
 }
 
 .event-text h5 {
-  color: white;
+  color: black;
+  font-weight: bold;
   font-size: 25px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .event-text p {
-  color: white;
+  color: black;
+  font-weight: bold;
   font-size: 25px;
   margin-bottom: 0px;
   font-family: 'PT Sans', sans-serif;
@@ -70,11 +73,9 @@
 }
 
 .transbox {
-  // height: 350px;
-  // margin: 30px;
- //  background-color: #ffffff;
- //  opacity: 0.5;
- //  filter: alpha(opacity=50); /* For IE8 and earlier */
+  background-color: #F8F8F8;
+  opacity: 0.7;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .wedding {

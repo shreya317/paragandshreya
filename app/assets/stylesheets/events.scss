@@ -31,14 +31,12 @@
 
 .event-text h5 {
   color: black;
-  font-weight: bold;
   font-size: 25px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .event-text p {
   color: black;
-  font-weight: bold;
   font-size: 25px;
   margin-bottom: 0px;
   font-family: 'PT Sans', sans-serif;
@@ -102,8 +100,10 @@
   }
 
   .event-text {
-  padding-top: 157px;
-  padding-bottom: 157px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px
   }
 
   .event-text h3 {

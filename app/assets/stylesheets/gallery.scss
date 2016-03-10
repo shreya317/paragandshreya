@@ -6,6 +6,11 @@ img {
   margin: 0 auto;
 }
 
+.slick-prev:before, .slick-next:before { 
+    color:black !important;
+    font-weight: bold;
+}
+
 .gallery {
   width: 800px;
   margin-left: auto;
@@ -20,6 +25,10 @@ img {
 
 .gallery .tall img {
   width: 400px;
+}
+
+.gallery .slider-nav .tall img {
+  width: 105px;
 }
 
 .orbit-container .orbit-prev > span {

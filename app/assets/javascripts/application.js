@@ -58,4 +58,8 @@ $(document).ready(function(){
     }
   });
 
+  if (window.location.pathname == "/") {
+    $("nav a.current").removeClass("current")
+  };
+
 });

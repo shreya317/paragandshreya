@@ -83,6 +83,11 @@ nav .fi-heart {
   background: asset_url("story/proposal.JPG") no-repeat center center fixed;
 }
 
+nav a.current {
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+
 .top-bar ul li a {
   background-color: #fff !important;
   color: black !important;

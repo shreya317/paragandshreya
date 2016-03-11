@@ -51,4 +51,11 @@ $(document).ready(function(){
     $(".down").hide();
   };
 
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      // $(this).addClass("color", "red");
+      $(this).addClass('current');
+    }
+  });
+
 });

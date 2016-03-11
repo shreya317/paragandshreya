@@ -18,10 +18,12 @@ class WeddingpartyController < ApplicationController
     neema   = ActionController::Base.helpers.image_path('weddingparty/neema.jpg')
     nimu    = ActionController::Base.helpers.image_path('weddingparty/nimu.jpg')
     nita    = ActionController::Base.helpers.image_path('weddingparty/nita.jpg')
+    parag   = ActionController::Base.helpers.image_path('weddingparty/parag.jpg')
     prerna  = ActionController::Base.helpers.image_path('weddingparty/prerna.jpg')
     rasila  = ActionController::Base.helpers.image_path('weddingparty/rasila.jpg')
     rina    = ActionController::Base.helpers.image_path('weddingparty/rina.jpg')
     shaan   = ActionController::Base.helpers.image_path('weddingparty/shaan.jpg')
+    shreya  = ActionController::Base.helpers.image_path('weddingparty/shreya.jpg')
     sujay   = ActionController::Base.helpers.image_path('weddingparty/sujay.jpg')
     tejas   = ActionController::Base.helpers.image_path('weddingparty/tejas.jpg')
     vivek   = ActionController::Base.helpers.image_path('weddingparty/vivek.jpg')
@@ -42,10 +44,12 @@ class WeddingpartyController < ApplicationController
       "neema"   => neema,
       "nimu"    => nimu,
       "nita"    => nita,
+      "parag"   => parag,
       "prerna"  => prerna,
       "rasila"  => rasila,
       "rina"    => rina,
       "shaan"   => shaan,
+      "shreya"  => shreya,
       "sujay"   => sujay,
       "tejas"   => tejas,
       "vivek"   => vivek,

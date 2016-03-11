@@ -1,8 +1,42 @@
 const WeddingPartyIndex = React.createClass({
+  renderBride(images) {
+    return (
+      <div className="medium-6 columns bride bio">  
+        <div className="pic"><img src={images.shreya} /></div>
+        <h5><i>Shreya Patel</i></h5>
+        <ul>
+          <li>Born on December 5th, 1987 in Kisumu, Kenya</li>
+          <li>Works as a Software Engineer at Sprout Social</li>
+        </ul>
+
+        <h5 className="q">What's quirky about Parag?</h5> 
+        <p>He doesn't like to mix his milk and cereal together. He eats it separately.</p>
+        <h5 className="q">What's the one thing you're most looking forward to after marriage?</h5> 
+        <p>No more separaion anxiety from Parag.</p>  
+      </div>
+    )
+  },
+
+  renderGroom(images) {
+    return (
+      <div className="medium-6 columns groom bio">  
+        <div className="pic"><img src={images.parag} /></div>
+        <h5><i>Parag Dadhaniya</i></h5>
+        <ul>
+          <li>Born on November 4th, 1987 in Moline, IL</li>
+          <li>Works as a Software Engineer at Trunk Club</li>
+        </ul>
+        <h5 className="q">What's quirky about Shreya?</h5> 
+        <p>During the winter, she sleeps with a space heater on while the centeral heat is set to 72 degrees.</p>
+        <h5 className="q">What's the one thing you're most looking forward to after marriage?</h5> 
+        <p>Living together with Shreya.</p>
+      </div>
+    )
+  }, 
+
   renderBridesFamily(images) {
     return (
       <div className="large-6 columns bride">
-        <a id="to-next-div"></a>
         <h3>Bride&apos;s Family</h3>
 
         <div className="pic"><img src={images.anil} /></div>
@@ -54,7 +88,8 @@ const WeddingPartyIndex = React.createClass({
 
   renderGroomsFamily(images) {
     return (
-      <div className="large-6 columns groom">
+      <div className="large-6 columns groom">  
+
         <h3>Groom&apos;s Family</h3>
 
         <div className="pic"><img src={images.navin} /></div>
@@ -107,6 +142,15 @@ const WeddingPartyIndex = React.createClass({
       <div>
         <a id="tothetop"></a>
         <div className="wedding-party"></div>
+
+        <div className="wprow">
+          <div className="row">
+            <a id="to-next-div"></a>
+            <h3 className="couple">Meet the Couple</h3>
+            {this.renderBride(images)}
+            {this.renderGroom(images)}
+          </div>
+        </div>
 
         <div className="wprow">
           <div className="row">

@@ -27,7 +27,7 @@ const WeddingPartyIndex = React.createClass({
           <li>Works as a Software Engineer at Trunk Club</li>
         </ul>
         <h5 className="q">What's quirky about Shreya?</h5> 
-        <p>During the winter, she sleeps with a space heater on while the centeral heat is set to 72 degrees.</p>
+        <p>During the winter, she sleeps with a space heater on while the central heat is set to 72 degrees.</p>
         <h5 className="q">What's the one thing you're most looking forward to after marriage?</h5> 
         <p>Living together with Shreya.</p>
       </div>

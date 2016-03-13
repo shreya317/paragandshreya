@@ -19,6 +19,7 @@
 //= require react_ujs
 //= require components
 //= require lodash
+//= require slick
 //= require_tree .
 
 // $(function(){ $(document).foundation(); });

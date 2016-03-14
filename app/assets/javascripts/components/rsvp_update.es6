@@ -4,8 +4,9 @@ const RsvpUpdate = React.createClass({
       <div className="row">
         <a id="tothetop"></a>
         <div className="rsvp-thank-you">
-          <h1>Thank you for your R.S.V.P.!</h1>
-          <h4>You may view or update your response anytime.</h4>
+          <h1>Thank you!</h1>
+          <h5>You may view or update your response</h5>
+          <h5>anytime before 5/22/16.</h5>
         </div>
       </div>
     )

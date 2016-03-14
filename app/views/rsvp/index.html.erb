@@ -1,7 +1,6 @@
-<%= react_component('RsvpIndex', { guest_error: @guest_error}) %>
-
 <% if flash[:guest_not_found] %>
 	<div class="row">
 		<h3 class="not_found"><%=flash[:guest_not_found]%></h3>
 	</div>
 <%end%>
+<%= react_component('RsvpIndex', { guest_error: @guest_error}) %>

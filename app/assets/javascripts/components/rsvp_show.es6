@@ -74,8 +74,11 @@ const RsvpShow = React.createClass({
       <div className="rsvp-form">
         <a id="tothetop"></a>
         <div className="row">
-        <h1>Hello!</h1>
-        <p>KINDLY RESPOND BY May 20, 2016.</p>
+        <h1>R.S.V.P.</h1>
+        <div className="rsvp-greeting">
+          <h5>Hello, we're so excited to celebrate with you!</h5>
+          <h5>Kindly respond by May 20, 2016.</h5>
+        </div>
         <form className="rsvp-form-section" action="/rsvp/update" method="post">
           {this.renderGuestData()}
           {this.renderFamilyMessage()}

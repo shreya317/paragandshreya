@@ -9,17 +9,16 @@ class RsvpController < ApplicationController
 
     guest = Guest.where(full_name: name, zip: zip)
 
-    if guest.count == 0
-      @guest_error = "Name or ZIP Code does not match, please try again"
-      # TODO handle errors
-    elsif guest.count == 1
-      guests = get_guests_for_family(guest)
-    else
+    if guest.empty?
+      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again."
+      render "index"
+    elsif guest.count > 1
       # TODO show table of options for multiple guests
+    else
+      guests = get_guests_for_family(guest)
+      @events_hash = make_events_hash
+      @guest_data = hydrate_guest_data(guests)
     end
-
-    @events_hash = make_events_hash
-    @guest_data = hydrate_guest_data(guests)
   end
 
   def update

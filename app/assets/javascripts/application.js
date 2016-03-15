@@ -19,11 +19,35 @@
 //= require react_ujs
 //= require components
 //= require lodash
+//= require slick
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+jQuery(document).ready(function($) {
+  $(document).foundation();
+});
 
 $(document).ready(function(){
+
+   $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.slider-nav',
+    autoplay: true,
+  });
+
+  $('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    arrows: false,
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  }); 
+
+
 
   $('a[href^="#tothetop"]').on('click',function (e) {
       e.preventDefault();

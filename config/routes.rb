@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get '/contact' => 'contact#index'
 
-  get '/accomodations' => 'accomodations#index'
+  get '/accommodations' => 'accomodations#index'
 
   get '/events' => 'events#index'
 

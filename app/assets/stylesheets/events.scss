@@ -17,26 +17,28 @@
 }
 
 .event-text {
-  margin-top: 104px;
-  margin-bottom: 104px;
-  padding: 30px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 146.5px;
+  margin-bottom: 146.5px;
   text-align: center;
 }
 
 .event-text h3 {
   font-family: 'Dancing Script', cursive;
-  color: black;
+  color: white;
   font-size: 70px;
 }
 
 .event-text h5 {
-  color: black;
+  color: white;
   font-size: 25px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .event-text p {
-  color: black;
+  color: white;
   font-size: 25px;
   margin-bottom: 0px;
   font-family: 'PT Sans', sans-serif;
@@ -70,14 +72,17 @@
   background: asset_url("eventpage/haldi2.jpg") no-repeat center center fixed;
 }
 
-.transbox {
-  background-color: #F8F8F8;
-  opacity: 0.7;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
 .wedding {
   background: asset_url("eventpage/golfcourse.png") no-repeat center center fixed;
+}
+
+.mehndi .layer, .svidhi .layer,
+.pvidhi .layer, .garba .layer,
+.wedding .layer, .reception .layer {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 600px;;
 }
 
 .garba, .mehndi, .pvidhi, .reception, .svidhi, .wedding {
@@ -95,15 +100,20 @@
     height: 500px;
   }
 
+  .mehndi .layer, .svidhi .layer,
+  .pvidhi .layer, .garba .layer,
+  .wedding .layer, .reception .layer {
+    height: 500px;;
+  }
+
   .epage {
     height: 600px;
   }
 
   .event-text {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px
+    position: absolute;
+    width: 100%;
+    left: 0;
   }
 
   .event-text h3 {
@@ -114,6 +124,16 @@
     font-size: 18px;
   }
 
+  .pvidhi .event-text h3 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .pvidhi .event-text, .svidhi .event-text {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+
   .event-text p {
     font-size: 18px;
     margin-bottom: 0px;
@@ -121,10 +141,6 @@
 
   .event-text a {
     font-size: 18px;
-  }
-
-  .garba h3, .wedding h3, .reception h3 {
-    font-size: 55px;
   }
 
   body {

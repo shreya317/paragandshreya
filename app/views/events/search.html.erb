@@ -1,51 +1,51 @@
-<form class="" action="/events/search" method="get">
-	<div class="row">
-		<div class="medium-12 columns">
-			<label><h5>View RSVP by Event</h5></label>
-			<select name="event">
-				<option value="--"></option>
-				<% @event_list.each do |e| %>
-					<option value=<%=e.event_name%>> <%=e.event_name%></option>
-				<%end%>
-			</select>
-		</div>
-		<input type="submit" value="Search" class="button tiny"/>
-	</div>
+<form action="/events/search" method="get">
+  <div class="row">
+    <div class="medium-12 columns">
+      <label><h5>View RSVP by Event</h5></label>
+      <select name="event">
+        <option value="--"></option>
+        <% @event_list.each do |e| %>
+          <option value=<%= e.event_name %>> <%= e.event_name %></option>
+        <%end%>
+      </select>
+    </div>
+    <input type="submit" value="Search" class="button tiny"/>
+  </div>
 </form>
 
 <% if @event_rsvps %>
-	<h3><%=params[:event]%></h3>
-	<table>
-	  <thead>
-	    <tr>
-	    	<th> Status</th>
-	      <th width="300">Name</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-    	<% @event_rsvps.each do |rsvp| %>
-    		<tr>
-    			<td><%=rsvp.status%></td>
-    			<td><%=rsvp.guest.first_name%> <%=rsvp.guest.last_name%></td>
-   			</tr>
-    	<%end%>  
-	  </tbody>
-	</table>
+  <h3><%=params[:event]%></h3>
+  <table>
+    <thead>
+      <tr>
+        <th> Status</th>
+        <th width="300">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @event_rsvps.each do |rsvp| %>
+        <tr>
+          <td><%=rsvp.status%></td>
+          <td><%=rsvp.guest.first_name%> <%=rsvp.guest.last_name%></td>
+        </tr>
+      <%end%>  
+    </tbody>
+  </table>
 
-	<table>
-	  <thead>
-	    <tr>
-	    	<th>Attending</th>
-	      <th>Not Attending</th>
-	      <th>No Reply</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-  		<tr>
-  			<td><%=@attending%></td>
-  			<td><%=@not_attending%></td>
-  			<td><%=@no_reply%></td>
- 			</tr> 
-	  </tbody>
-	</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Attending</th>
+        <th>Not Attending</th>
+        <th>No Reply</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%=@attending%></td>
+        <td><%=@not_attending%></td>
+        <td><%=@no_reply%></td>
+      </tr> 
+    </tbody>
+  </table>
 <%end%>

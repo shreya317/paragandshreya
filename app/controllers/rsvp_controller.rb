@@ -4,28 +4,36 @@ class RsvpController < ApplicationController
   end
 
   def show
-    name = params.fetch('name')
+    name = params.fetch('name').downcase
     zip  = params.fetch('zip')
 
-    guest = Guest.where(full_name: name).where(zip: zip)
+    guest = Guest.where(full_name: name, zip: zip)
 
-    if guest.count == 0
-      # TODO handle errors
-    elsif guest.count == 1
-      guests = get_guests_for_family(guest)
-    else
+    if guest.empty?
+      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again."
+      render "index"
+    elsif guest.count > 1
       # TODO show table of options for multiple guests
+    else
+      guests = get_guests_for_family(guest)
+      @events_hash = make_events_hash
+      @guest_data = hydrate_guest_data(guests)
     end
-
-    @events_hash = make_events_hash
-    @guest_data = hydrate_guest_data(guests)
   end
 
   def update
+    message = params.fetch('message')
     rsvp_hash = params.clone
-    rsvp_hash.delete('controller') && rsvp_hash.delete('action')
+    rsvp_hash.delete('controller') && rsvp_hash.delete('action') && rsvp_hash.delete('message')
 
     rsvps_to_update = rsvp_hash.keys
+
+    guest_rsvp_id = rsvps_to_update.first
+    one_rsvp = Rsvp.find(guest_rsvp_id)
+    family_id = Guest.find(one_rsvp.guest_id).family_id
+    family = Family.find(family_id)
+    family.message = message
+    family.save!
 
     rsvps_to_update.each do |rsvp_id|
       rsvp = Rsvp.find(rsvp_id)
@@ -49,6 +57,8 @@ class RsvpController < ApplicationController
       {
         "id" => guest.id,
         "full_name" => guest.full_name,
+        "first_name" => guest.first_name,
+        "last_name" => guest.last_name,
         "email" => guest.email,
         "rsvps" => rsvps
       }

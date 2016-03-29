@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get '/events' => 'events#index'
 
+  get '/events/search'
+
   get '/rsvp' => 'rsvp#index'
 
   get '/rsvp/user' => 'rsvp#show'

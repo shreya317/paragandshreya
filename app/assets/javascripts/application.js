@@ -71,9 +71,10 @@ $(document).ready(function(){
       }, 900, 'swing');
   });
 
-  if ($("div").hasClass("gallery")) {
+  if (window.location.pathname == "/gallery") {
     $(".down").hide();
   };
+
 
   $('a').each(function() {
     if ($(this).prop('href') == window.location.href) {
@@ -85,5 +86,18 @@ $(document).ready(function(){
   if (window.location.pathname == "/") {
     $("nav a.current").removeClass("current")
   };
+
+  if (window.location.pathname == "/rsvp") {
+    $(".down").hide();
+  };
+
+  if (window.location.pathname == "/rsvp/user") {
+    $(".down").hide();
+  }
+
+  if (window.location.pathname == "/rsvp/update") {
+    $(".down").hide();
+    $(".top").hide();
+  }
 
 });

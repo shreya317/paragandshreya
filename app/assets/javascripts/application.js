@@ -75,6 +75,8 @@ $(document).ready(function(){
     $(".down").hide();
   };
 
+  $(".fi-arrow-down").effect( "bounce", {times:5, distance:40}, 3000 );
+
   $('a').each(function() {
     if ($(this).prop('href') == window.location.href) {
       // $(this).addClass("color", "red");

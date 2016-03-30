@@ -47,7 +47,7 @@ class RsvpController < ApplicationController
   def make_events_hash
     events = Event.all
     events_hash = {}
-    events.map { |event| events_hash[event.id] = event.event_name }
+    events.map { |event| events_hash[event.id] = event }
     return events_hash
   end
 

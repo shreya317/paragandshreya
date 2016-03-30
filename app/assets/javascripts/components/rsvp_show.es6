@@ -72,6 +72,7 @@ const RsvpShow = React.createClass({
   renderFamilyMessage() {
     return (
       <div className="row">
+        <p><i className="fi-info"></i>  Hover over event name for details.</p>
         <div className="medium-12 small-12 columns">
           <textarea name="message" placeholder="Message for the couple"></textarea>
         </div>

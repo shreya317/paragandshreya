@@ -98,7 +98,6 @@ $(document).ready(function(){
 
   if (window.location.pathname == "/rsvp/update") {
     $(".down").hide();
-    $(".top").hide();
   }
 
 });

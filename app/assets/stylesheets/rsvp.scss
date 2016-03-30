@@ -34,7 +34,7 @@ ul.rsvp-icon {
 }
 
 .sign-in, .not_found {
-  background-color: #F5F5F5;
+  background-color: #F5F5F5; //light grey
 }
 
 .sign-in .row {
@@ -133,19 +133,33 @@ ul.rsvp-icon {
 // RSVP Thank You
 
 .rsvp-thank-you {
+  background-color: #F5F5F5; //light grey
+}
+
+.rsvp-thank-you .info {
   text-align: center;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .rsvp-thank-you h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 70px;
   color: #0078a0; /*teal blue*/
 }
 
 .rsvp-thank-you h5 {
   font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+
+.update {
+  background: asset_url("mainpages/rsvp-thankyou.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -192,11 +206,13 @@ ul.rsvp-icon {
 
   // RSVP Thank You
 
-  .rsvp-thank-you {
+  .rsvp-thank-you .info {
     padding-right: 30px;
     padding-left: 30px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+  }
+
+  .rsvp-thank-you .info h1 {
+    font-size: 50px;
   }
 
   body {

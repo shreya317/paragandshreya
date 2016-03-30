@@ -2,7 +2,17 @@ const RsvpShow = React.createClass({
 
   renderEventName(eventId) {
     let events = this.props.events
-    return events[eventId]
+    return events[eventId].event_name
+  },
+
+  renderEventInfo(eventId) {
+    let events = this.props.events
+    var e = events[eventId]
+    var date = e.date
+    var time = e.time
+    var location = e.location
+    var info = date + ", " + time + " - " + location
+    return info
   },
 
   renderGuestData() {
@@ -33,7 +43,7 @@ const RsvpShow = React.createClass({
         <div key={rsvp.id}>
           <div className="medium-2 small-2 column">
             <div className="event-headers">
-              <label>{this.renderEventName(rsvp.event_id)}</label>
+              <label data-tooltip aria-haspopup="true" className="has-tip" title={this.renderEventInfo(rsvp.event_id)}>{this.renderEventName(rsvp.event_id)}</label>
             </div>
           </div>
         </div> 

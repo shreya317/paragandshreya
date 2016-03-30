@@ -73,12 +73,12 @@ ul.rsvp-icon {
   padding: 30px;
 }
 
-.rsvp-form .guest {
-  // padding-bottom: 30px;
-}
-
 .rsvp-form {
   margin: 0px auto;
+}
+
+.rsvp-form .has-tip {
+  border-bottom-style: none !important;
 }
 
 .rsvp-form .rsvp-greeting {

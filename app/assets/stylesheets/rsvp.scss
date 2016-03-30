@@ -8,7 +8,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }
 
 .rsvp-email {
@@ -28,9 +28,13 @@ ul.rsvp-icon {
 
 // Sign in section
 
-.not_found {
+.not_found h5 {
   text-align: center;
   color: red;
+}
+
+.sign-in, .not_found {
+  background-color: #F5F5F5;
 }
 
 .sign-in .row {

@@ -2,7 +2,13 @@ const RsvpShow = React.createClass({
 
   renderEventName(eventId) {
     let events = this.props.events
-    return events[eventId]
+    return events[eventId].event_name
+  },
+
+  renderEventInfo(eventId) {
+    let events = this.props.events
+    let e = events[eventId]
+    return e.date + ", " + e.time + " - " + e.location
   },
 
   renderGuestData() {
@@ -33,7 +39,7 @@ const RsvpShow = React.createClass({
         <div key={rsvp.id}>
           <div className="medium-2 small-2 column">
             <div className="event-headers">
-              <label>{this.renderEventName(rsvp.event_id)}</label>
+              <label data-tooltip aria-haspopup="true" className="has-tip" title={this.renderEventInfo(rsvp.event_id)}>{this.renderEventName(rsvp.event_id)}</label>
             </div>
           </div>
         </div> 
@@ -62,6 +68,7 @@ const RsvpShow = React.createClass({
   renderFamilyMessage() {
     return (
       <div className="row">
+        <p><i className="fi-info"></i>  Hover over event name for details.</p>
         <div className="medium-12 small-12 columns">
           <textarea name="message" placeholder="Message for the couple"></textarea>
         </div>

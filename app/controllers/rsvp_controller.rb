@@ -10,7 +10,7 @@ class RsvpController < ApplicationController
     guest = Guest.where(full_name: name, zip: zip)
 
     if guest.empty?
-      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again."
+      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again or contact Shreya or Parag."
       render "index"
     elsif guest.count > 1
       # TODO show table of options for multiple guests
@@ -47,7 +47,7 @@ class RsvpController < ApplicationController
   def make_events_hash
     events = Event.all
     events_hash = {}
-    events.map { |event| events_hash[event.id] = event.event_name }
+    events.map { |event| events_hash[event.id] = event }
     return events_hash
   end
 

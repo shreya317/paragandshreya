@@ -8,7 +8,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }
 
 .rsvp-email {
@@ -28,9 +28,13 @@ ul.rsvp-icon {
 
 // Sign in section
 
-.not_found {
+.not_found h5 {
   text-align: center;
   color: red;
+}
+
+.sign-in, .not_found {
+  background-color: #F5F5F5; //light grey
 }
 
 .sign-in .row {
@@ -65,6 +69,15 @@ ul.rsvp-icon {
 }
 
 // RSVP section
+.rsvp-form .fi-info {
+  font-size: 20px;
+  color: #008CBA; //bright teal
+}
+
+.rsvp-form p {
+  text-align: right;
+  font-size: 14px;
+}
 
 .rsvp-form .guest{
   border-bottom-style: solid;
@@ -73,12 +86,12 @@ ul.rsvp-icon {
   padding: 30px;
 }
 
-.rsvp-form .guest {
-  // padding-bottom: 30px;
-}
-
 .rsvp-form {
   margin: 0px auto;
+}
+
+.rsvp-form .has-tip {
+  border-bottom-style: none !important;
 }
 
 .rsvp-form .rsvp-greeting {
@@ -120,19 +133,33 @@ ul.rsvp-icon {
 // RSVP Thank You
 
 .rsvp-thank-you {
+  background-color: #F5F5F5; //light grey
+}
+
+.rsvp-thank-you .info {
   text-align: center;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .rsvp-thank-you h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 70px;
   color: #0078a0; /*teal blue*/
 }
 
 .rsvp-thank-you h5 {
   font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+
+.update {
+  background: asset_url("mainpages/rsvp-thankyou.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -150,20 +177,24 @@ ul.rsvp-icon {
 
   // RSVP Section
 
+  .rsvp-greeting {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .center-button {
     margin-top: 20px;
     text-align: center;
   }
 
   .rsvp-form form .mobile-select {
-    margin-right: 100px;
+    margin-right: 50px;
     height: 55px;
   }
 
   .rsvp-form form .event-headers {
     width: 300px;
     height: 55px;
-    padding-left: 50px;
   }
 
   .rsvp-form form .name {
@@ -177,13 +208,19 @@ ul.rsvp-icon {
     margin: 0px auto;
   }
 
+  .rsvp-form-section p {
+    visibility: hidden;
+  }
+
   // RSVP Thank You
 
-  .rsvp-thank-you {
+  .rsvp-thank-you .info {
     padding-right: 30px;
     padding-left: 30px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+  }
+
+  .rsvp-thank-you .info h1 {
+    font-size: 50px;
   }
 
   body {

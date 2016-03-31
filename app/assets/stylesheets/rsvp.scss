@@ -8,24 +8,11 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 900px;
+  height: 700px;
 }
 
-.coming-soon {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background: transparent;
-  height: 500px;
-  padding-top: 208.5px;
-  padding-bottom: 208.5px;
-}
-
-.coming-soon h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
-  color: #0078a0; /*teal blue*/
+.rsvp-email {
+  margin-top: 20px;
 }
 
 ul.rsvp-icon {
@@ -39,23 +26,201 @@ ul.rsvp-icon {
   font-size: 60px;
 }
 
+// Sign in section
+
+.not_found h5 {
+  text-align: center;
+  color: red;
+}
+
+.sign-in, .not_found {
+  background-color: #F5F5F5; //light grey
+}
+
+.sign-in .row {
+  height: 400px;
+}
+
+.sign-in, .rsvp-form {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.sign-in .button, .rsvp-form .button {
+  border-radius: 10px !important;
+  box-shadow: 5px 5px 5px grey !important;
+}
+
+.sign-in form {
+  width: 400px;
+  margin: 0px auto;
+}
+
+.sign-in h1, .rsvp-form h1, .song-requests h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #0078a0; /*teal blue*/
+  text-align: center;
+}
+
+.sign-in p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+// RSVP section
+.rsvp-form .fi-info {
+  font-size: 20px;
+  color: #008CBA; //bright teal
+}
+
+.rsvp-form p {
+  text-align: right;
+  font-size: 14px;
+}
+
+.rsvp-form .guest{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #E3E3E3; //light grey
+  padding: 30px;
+}
+
+.rsvp-form {
+  margin: 0px auto;
+}
+
+.rsvp-form .has-tip {
+  border-bottom-style: none !important;
+}
+
+.rsvp-form .rsvp-greeting {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rsvp-greeting h5 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.rsvp-form input[name="email_address"] {
+  width: 400px;
+}
+
+.rsvp-form label {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.rsvp-form label.name {
+  padding-top: 30px;
+}
+
+.rsvp-form-section {
+  padding-top: 20px;
+}
+
+.rsvp-form select {
+  width: 60px;
+}
+
+.rsvp-form textarea {
+  height: 100px;
+  margin-top: 50px;
+}
+
+// RSVP Thank You
+
+.rsvp-thank-you {
+  background-color: #F5F5F5; //light grey
+}
+
+.rsvp-thank-you .info {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.rsvp-thank-you h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  color: #0078a0; /*teal blue*/
+}
+
+.rsvp-thank-you h5 {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+
+.update {
+  background: asset_url("mainpages/rsvp-thankyou.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
+}
+
 @media screen and (max-width: 39.9375em) {
-  .coming-soon {
-    height: 400px;
-    padding-top: 165px;
-    padding-bottom: 165px;
-  }
-
-  .coming-soon h1 {
-    font-size: 50px;
-  }
-
   .rsvp {
     height: 600px;
   }
 
   .rsvp-icon li {
     font-size: 40px;
+  }
+
+  .sign-in form {
+    width: 300px;
+  }
+
+  // RSVP Section
+
+  .rsvp-greeting {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .center-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .rsvp-form form .mobile-select {
+    margin-right: 50px;
+    height: 55px;
+  }
+
+  .rsvp-form form .event-headers {
+    width: 300px;
+    height: 55px;
+  }
+
+  .rsvp-form form .name {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+   .rsvp-form textarea {
+    width: 300px;
+    height: 150px;
+    margin: 0px auto;
+  }
+
+  .rsvp-form-section p {
+    visibility: hidden;
+  }
+
+  // RSVP Thank You
+
+  .rsvp-thank-you .info {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .rsvp-thank-you .info h1 {
+    font-size: 50px;
   }
 
   body {

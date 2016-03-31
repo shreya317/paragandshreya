@@ -71,9 +71,11 @@ $(document).ready(function(){
       }, 900, 'swing');
   });
 
-  if ($("div").hasClass("gallery")) {
+  if (window.location.pathname == "/gallery") {
     $(".down").hide();
   };
+
+  $(".fi-arrow-down").effect( "bounce", {times:5, distance:40}, 3000 );
 
   $('a').each(function() {
     if ($(this).prop('href') == window.location.href) {
@@ -85,5 +87,17 @@ $(document).ready(function(){
   if (window.location.pathname == "/") {
     $("nav a.current").removeClass("current")
   };
+
+  if (window.location.pathname == "/rsvp") {
+    $(".down").hide();
+  };
+
+  if (window.location.pathname == "/rsvp/user") {
+    $(".down").hide();
+  }
+
+  if (window.location.pathname == "/rsvp/update") {
+    $(".down").hide();
+  }
 
 });

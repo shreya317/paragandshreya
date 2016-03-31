@@ -7,12 +7,8 @@ const RsvpShow = React.createClass({
 
   renderEventInfo(eventId) {
     let events = this.props.events
-    var e = events[eventId]
-    var date = e.date
-    var time = e.time
-    var location = e.location
-    var info = date + ", " + time + " - " + location
-    return info
+    let e = events[eventId]
+    return e.date + ", " + e.time + " - " + e.location
   },
 
   renderGuestData() {

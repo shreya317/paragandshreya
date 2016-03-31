@@ -53,7 +53,7 @@ class RsvpController < ApplicationController
 
   def hydrate_guest_data(guests)
     guests.map do |guest|
-      rsvps = Rsvp.where(guest_id: guest.id)
+      rsvps = Rsvp.where(guest_id: guest.id).order(:event_id)
       {
         "id" => guest.id,
         "full_name" => guest.full_name,

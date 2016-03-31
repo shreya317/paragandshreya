@@ -10,7 +10,7 @@ class RsvpController < ApplicationController
     guest = Guest.where(full_name: name, zip: zip)
 
     if guest.empty?
-      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again or contact the host."
+      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again or contact Shreya or Parag."
       render "index"
     elsif guest.count > 1
       # TODO show table of options for multiple guests

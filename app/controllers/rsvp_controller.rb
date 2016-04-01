@@ -1,6 +1,8 @@
 class RsvpController < ApplicationController
   skip_before_action :verify_authenticity_token
+
   def index
+    @no_guest
   end
 
   def show
@@ -9,8 +11,10 @@ class RsvpController < ApplicationController
 
     guest = Guest.where(full_name: name, zip: zip)
 
+    @no_guest = false
+
     if guest.empty?
-      flash.now[:guest_not_found] = "Name or ZIP Code does not match, please try again or contact Shreya or Parag."
+      @no_guest = true
       render "index"
     elsif guest.count > 1
       # TODO show table of options for multiple guests

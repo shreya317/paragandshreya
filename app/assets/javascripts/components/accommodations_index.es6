@@ -20,7 +20,7 @@ const AccommodationsIndex = React.createClass({
               <p><b>Parag & Shreya Wedding</b></p>
               <p>to reserve a room at a special discounted rate.</p><br />
               <p><i>Rate only available for August 5th & August 6th, 2016</i></p>
-              <p><i>Must reserve by July 21st, 2016.</i></p>
+              <p><i>Must reserve by July 6th, 2016.</i></p>
             </div>
 
             <div className="large-6 columns friends">
@@ -37,7 +37,7 @@ const AccommodationsIndex = React.createClass({
                 <p><b>Parag & Shreya Wedding</b></p>
               <p>to reserve a room at a special discounted rate.</p><br />
               <p><i>Rate only available for August 5th & August 6th, 2016</i></p>
-              <p><i>Must reserve by July 21st, 2016.</i></p>
+              <p><i>Must reserve by July 6th, 2016.</i></p>
             </div>
           </div>
           <div className="quick-links">

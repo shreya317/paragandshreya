@@ -18,3 +18,5 @@ tmp
 /config/application.yml
 
 /db/seeds.rb
+
+*.csv

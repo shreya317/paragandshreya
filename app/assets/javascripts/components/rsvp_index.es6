@@ -1,12 +1,24 @@
 const RsvpIndex = React.createClass({
+  renderGuestNotFound() {
+    let guestNotFound = this.props.no_guest ? (
+      <div className="not_found">
+        <h5>Name or Zip Code not found.</h5>
+        <h5>Please try again or contact Shreya and Parag.</h5>
+      </div>
+    ) : (
+      null
+    )
+    return guestNotFound
+  },
+
   render() {
     return (
       <div>
         <a id="tothetop"></a>
-
         <div className="sign-in">
           <a id="to-next-div"></a>
           <div className="row">
+            {this.renderGuestNotFound()}
             <h1>R.S.V.P.</h1>
             <p>KINDLY RESPOND BY May 20, 2016.</p>
             <form action='/rsvp/user' method='get'>

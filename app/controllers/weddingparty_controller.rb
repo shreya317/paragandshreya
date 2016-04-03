@@ -18,7 +18,7 @@ class WeddingpartyController < ApplicationController
     neema   = ActionController::Base.helpers.image_path('weddingparty/neema.jpg')
     nimu    = ActionController::Base.helpers.image_path('weddingparty/nimu.jpg')
     nita    = ActionController::Base.helpers.image_path('weddingparty/nita.jpg')
-    parag   = ActionController::Base.helpers.image_path('weddingparty/parag.jpg')
+    parag   = ActionController::Base.helpers.image_path("http://res.cloudinary.com/pdadhaniya/image/upload/v1459566759/parag_x9hpzj.jpg")
     prerna  = ActionController::Base.helpers.image_path('weddingparty/prerna.jpg')
     rasila  = ActionController::Base.helpers.image_path('weddingparty/rasila.jpg')
     rina    = ActionController::Base.helpers.image_path('weddingparty/rina.jpg')

@@ -100,4 +100,8 @@ $(document).ready(function(){
     $(".down").hide();
   }
 
+  if (window.location.pathname == "/events/search") {
+    $(".down").hide();
+  }
+
 });

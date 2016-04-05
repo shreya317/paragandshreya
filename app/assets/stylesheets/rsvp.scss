@@ -41,10 +41,6 @@ ul.rsvp-icon {
   background-color: #F5F5F5; //light grey
 }
 
-.sign-in .row {
-  height: 400px;
-}
-
 .sign-in, .rsvp-form {
   font-family: 'PT Sans', sans-serif;
   padding-top: 120px;
@@ -119,6 +115,7 @@ ul.rsvp-icon {
 
 .rsvp-form label.name {
   padding-top: 30px;
+  color: #0078a0; /*teal blue*/
 }
 
 .rsvp-form-section {

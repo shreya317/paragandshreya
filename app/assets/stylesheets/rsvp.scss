@@ -83,7 +83,7 @@ ul.rsvp-icon {
   border-bottom-style: solid;
   border-width: 1px;
   border-color: #E3E3E3; //light grey
-  padding: 30px;
+  padding: 20px;
 }
 
 .rsvp-form {
@@ -102,10 +102,6 @@ ul.rsvp-icon {
 
 .rsvp-greeting h5 {
   font-family: 'PT Sans', sans-serif;
-}
-
-.rsvp-form input[name="email_address"] {
-  width: 400px;
 }
 
 .rsvp-form label {
@@ -128,7 +124,14 @@ ul.rsvp-icon {
 
 .rsvp-form textarea {
   height: 100px;
-  margin-top: 50px;
+}
+
+.rsvp-form input[name="email"] {
+  width: 400px;
+}
+
+.center-button {
+  text-align: center;
 }
 
 // RSVP Thank You
@@ -207,6 +210,20 @@ ul.rsvp-icon {
     width: 300px;
     height: 150px;
     margin: 0px auto;
+  }
+
+  .rsvp-form input[name="email"] {
+    width: 300px;
+    margin: 0px auto;
+  }
+
+  .rsvp-form .message,
+  .rsvp-form .email {
+    margin-left: 50px;
+  }
+
+  .rsvp-email .email {
+    padding-top: 20px;
   }
 
   .rsvp-form-section p {

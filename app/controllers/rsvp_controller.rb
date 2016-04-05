@@ -1,6 +1,8 @@
 class RsvpController < ApplicationController
   skip_before_action :verify_authenticity_token
 
+  include ApplicationHelper
+
   def index
     @no_guest
   end
@@ -19,16 +21,27 @@ class RsvpController < ApplicationController
     elsif guest.count > 1
       # TODO show table of options for multiple guests
     else
+      session[:guest_id] = guest.first.id
       guests = get_guests_for_family(guest)
       @events_hash = make_events_hash
       @guest_data = hydrate_guest_data(guests)
+      @current_guest = current_user
     end
   end
 
   def update
     message = params.fetch('message')
+    email = params.fetch('email')
+    
+    if email
+      current_user.update!(email: email)
+    end
+
     rsvp_hash = params.clone
-    rsvp_hash.delete('controller') && rsvp_hash.delete('action') && rsvp_hash.delete('message')
+    rsvp_hash.delete('controller') && 
+    rsvp_hash.delete('action') && 
+    rsvp_hash.delete('message') && 
+    rsvp_hash.delete('email')
 
     rsvps_to_update = rsvp_hash.keys
 
@@ -44,6 +57,12 @@ class RsvpController < ApplicationController
       rsvp.status = rsvp_hash[rsvp_id]
       rsvp.save!
     end
+
+    if current_user.email
+      RsvpMailer.send_confirmation_email(current_user).deliver_now
+    end
+
+    RsvpMailer.send_alert_email(current_user).deliver_now    
   end
 
   private

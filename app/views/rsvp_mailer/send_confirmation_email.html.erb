@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  </head>
+
+  <body>
+    <div class="row rsvp-confirmation">
+      <h2 style="color:#0078a0;">Hi <%= @guest.first_name %>,</h2>
+      <p>Thank you for your RSVP. We look forward to celebrating our wedding weekend with everyone.</p>
+
+      <p>Always,</p>
+      <p>Parag & Shreya</p>
+
+      <button style="background-color:#0078a0; padding:10px;"><a style="color:white; text-decoration:none; font-size:12px;"href="http://www.paragandshreya.com/rsvp" target="_blank">Update RSVP</a></button>
+
+      <% @guest.family.guests.each do |guest|%>
+        <div class="rsvp-record" style="border-bottom: solid 1px #E3E3E3;">
+          <h3 style="color:#0078a0; margin-top: 10px;" class="name"><%=guest.first_name%> <%=guest.last_name%></h3>
+            <% guest.rsvps.each do |rsvp| %>
+              <p style="margin-bottom:0px;"><%=rsvp.event.event_name%>: <b><%=rsvp.status%></b></p>
+            <%end%>
+        </div>
+      <%end%>
+    </div>
+  </body>
+</html>

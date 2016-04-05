@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  </head>
+
+  <body>
+    <div class="row rsvp-confirmation">
+      <h2>Submitted by: <%= @guest.first_name %> <%= @guest.last_name%></h2>
+      
+      <% @guest.family.guests.each do |guest|%>
+        <div class="rsvp-record" style="border-bottom: solid 1px #E3E3E3;">
+          <h3 style="color:#0078a0; margin-top: 10px;" class="name"><%=guest.first_name%> <%=guest.last_name%></h3>
+            <% guest.rsvps.each do |rsvp| %>
+              <p style="margin-bottom:0px;"><%=rsvp.event.event_name%>: <b><%=rsvp.status%></b></p>
+            <%end%>
+        </div>
+      <%end%>
+    </div>
+  </body>
+</html>

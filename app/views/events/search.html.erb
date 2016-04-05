@@ -48,6 +48,7 @@
           <tr>
             <td><%=rsvp.status%></td>
             <td><%=rsvp.guest.first_name%> <%=rsvp.guest.last_name%></td>
+            <td><%=rsvp.updated_at.to_s(:long)%></td>
           </tr>
         <%end%>  
       </tbody>

@@ -8,11 +8,11 @@ class EventsController < ApplicationController
     @event_list = Event.all
 
     if (params[:event])
-      event_name     = Event.find_by(event_name: params[:event])
-      @event_rsvps   = event_name.rsvps.order(status: :desc, updated_at: :desc)
-      @attending     = event_name.rsvps.where(status: "Yes").length
-      @not_attending = event_name.rsvps.where(status: "No").length
-      @no_reply      = event_name.rsvps.where(status: "--").length
+      @event         = Event.find_by(event_name_underscore: params[:event])
+      @event_rsvps   = @event.rsvps.order(status: :desc, updated_at: :desc)
+      @attending     = @event.rsvps.where(status: "Yes").length
+      @not_attending = @event.rsvps.where(status: "No").length
+      @no_reply      = @event.rsvps.where(status: "--").length
     end
   end
 

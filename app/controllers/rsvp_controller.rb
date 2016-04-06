@@ -32,8 +32,8 @@ class RsvpController < ApplicationController
   def update
     message = params.fetch('message')
     email = params.fetch('email')
-    
-    if email
+
+    if email != ("" || nil)
       current_user.update!(email: email)
     end
 
@@ -49,8 +49,11 @@ class RsvpController < ApplicationController
     one_rsvp = Rsvp.find(guest_rsvp_id)
     family_id = Guest.find(one_rsvp.guest_id).family_id
     family = Family.find(family_id)
-    family.message = message
-    family.save!
+
+    if message != ("" || nil)
+      family.message = message
+      family.save!
+    end
 
     rsvps_to_update.each do |rsvp_id|
       rsvp = Rsvp.find(rsvp_id)
@@ -58,7 +61,7 @@ class RsvpController < ApplicationController
       rsvp.save!
     end
 
-    if current_user.email
+    if current_user.email != ("" || nil)
       RsvpMailer.send_confirmation_email(current_user).deliver_now
     end
 

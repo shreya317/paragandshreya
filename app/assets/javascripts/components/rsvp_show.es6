@@ -69,11 +69,20 @@ const RsvpShow = React.createClass({
     return (
       <div className="row">
         <p><i className="fi-info"></i>  Hover over event name for details.</p>
-        <div className="medium-12 small-12 columns">
-          <textarea name="message" placeholder="Message for the couple"></textarea>
-        </div>
+        <label className="message">Message for the couple</label>
+        <textarea name="message"></textarea>
       </div> 
     )
+  },
+
+  renderEmail() {
+    let currentUser = this.props.user
+    return (
+      <div className="row">
+        <label className="email">Enter e-mail address for confirmation</label>
+        <input type="text" name="email" placeholder={currentUser.email}/>
+      </div>
+    )   
   },
 
   render() {
@@ -89,6 +98,7 @@ const RsvpShow = React.createClass({
         <form className="rsvp-form-section" action="/rsvp/update" method="post">
           {this.renderGuestData()}
           {this.renderFamilyMessage()}
+          {this.renderEmail()}
           <div className="center-button">
             <input type="submit" value="Submit" className="button tiny"/>
           </div>

@@ -6,4 +6,8 @@ module ApplicationHelper
     return (wedding_day - today).to_i
   end
 
+  def current_user
+    @guest ||= Guest.find(session[:guest_id])
+  end
+
 end

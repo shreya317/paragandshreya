@@ -7,7 +7,9 @@ class EventsController < ApplicationController
   def search
     @event_list = Event.all
 
-    if (params[:event])
+    if (params[:event] == "messages")
+      @family_messages = Family.where.not(message: [nil, ''])
+    elsif (params[:event])
       @event         = Event.find_by(event_name_underscore: params[:event])
       @event_rsvps   = @event.rsvps.order(status: :desc, updated_at: :desc)
       @attending     = @event.rsvps.where(status: "Yes").length
@@ -15,5 +17,4 @@ class EventsController < ApplicationController
       @no_reply      = @event.rsvps.where(status: "--").length
     end
   end
-
 end

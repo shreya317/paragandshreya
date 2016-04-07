@@ -1,18 +1,19 @@
 <div class=row>
-<form class="event-search "action="/events/search" method="get">
-  <div class="row">
-    <div class="medium-12 columns">
-      <label><h3>View RSVP by Event</h3></label>
-      <select name="event">
-        <option value="--"></option>
-        <% @event_list.each do |e| %>
-          <option value=<%= e.event_name_underscore %>> <%= e.event_name %></option>
-        <%end%>
-      </select>
+  <form class="event-search "action="/events/search" method="get">
+    <div class="row">
+      <div class="medium-12 columns">
+        <label><h3>View RSVP by Event or Messages</h3></label>
+        <select name="event">
+          <option value="--"></option>
+          <% @event_list.each do |e| %>
+            <option value=<%= e.event_name_underscore %>> <%= e.event_name %></option>
+          <%end%>
+            <option value="messages">Messages</option>
+        </select>
+      </div>
+      <input type="submit" value="Search" class="button tiny"/>
     </div>
-    <input type="submit" value="Search" class="button tiny"/>
-  </div>
-</form>
+  </form>
 </div>
 
 <% if @event_rsvps %>
@@ -52,6 +53,33 @@
             <td><%=rsvp.updated_at.to_s(:long)%></td>
           </tr>
         <%end%>  
+      </tbody>
+    </table>
+  </div>
+<%end%>
+
+<% if @family_messages %>
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+          <th width="300">Family</th>
+          <th width="500">Message</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @family_messages.each do |fam| %>
+          <tr>
+            <td>
+              <% fam.guests.each do |member| %>
+                <%=member.full_name%>,
+              <%end%>
+            </td>
+            <td><%=fam.message%></td>
+            <td><%=fam.updated_at%></td>
+          </tr>
+        <%end%>
       </tbody>
     </table>
   </div>

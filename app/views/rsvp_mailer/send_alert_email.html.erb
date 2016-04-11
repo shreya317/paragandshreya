@@ -7,7 +7,7 @@
   <body>
     <div class="row rsvp-confirmation">
       <h2>Submitted by: <%= @guest.first_name %> <%= @guest.last_name%></h2>
-      
+
       <% @guest.family.guests.each do |guest|%>
         <div class="rsvp-record" style="border-bottom: solid 1px #E3E3E3;">
           <h3 style="color:#0078a0; margin-top: 10px;" class="name"><%=guest.first_name%> <%=guest.last_name%></h3>
@@ -16,6 +16,7 @@
             <%end%>
         </div>
       <%end%>
+      <p><b>Message: </b><%= guest.family.message %></p>
     </div>
   </body>
 </html>

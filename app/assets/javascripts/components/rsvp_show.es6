@@ -66,11 +66,12 @@ const RsvpShow = React.createClass({
   },
 
   renderFamilyMessage() {
+    let familyMessage= this.props.message
     return (
       <div className="row">
         <p><i className="fi-info"></i>  Hover over event name for details.</p>
         <label className="message">Message for the couple</label>
-        <textarea name="message"></textarea>
+        <textarea name="message">{familyMessage}</textarea>
       </div> 
     )
   },

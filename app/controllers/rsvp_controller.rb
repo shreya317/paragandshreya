@@ -26,6 +26,7 @@ class RsvpController < ApplicationController
       @events_hash = make_events_hash
       @guest_data = hydrate_guest_data(guests)
       @current_guest = current_user
+      @family_message = @current_guest.family.message
     end
   end
 

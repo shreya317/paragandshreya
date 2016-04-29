@@ -62,7 +62,7 @@ class RsvpController < ApplicationController
       rsvp.save!
     end
 
-    if current_user.email != ("" || nil)
+    if current_user.email? && current_user.email != ""
       RsvpMailer.send_confirmation_email(current_user).deliver_now
     end
 
